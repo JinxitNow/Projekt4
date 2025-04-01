@@ -1,14 +1,12 @@
 /* Farver og styles baseret på Dyrenes Beskyttelse */
 :root {
     --primary-color: #F7F1E8; /* Baggrundsfarve */
-    --secondary-color: #7D0F02; /* Mørk rød */
-    --highlight-color: #FF3B30; /* Rød til CTA */
+    --secondary-color: #7D0F02; 
+    --highlight-color: #FF3B30; /* CTA-farve */
     --text-color: #000000;
     --btn-text-color: #FFFFFF;
     --font-family: 'Arial', sans-serif;
 }
-
-
 
 body {
     font-family: var(--font-family);
