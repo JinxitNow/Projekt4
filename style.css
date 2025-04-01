@@ -267,23 +267,29 @@ button:hover {
     color: #ffffff;
 }
 
-/* Juster Tilmeld-knappen mod højre */
-.btn-container {
+/* Styling for knappen i sektionen 'Hold dig opdateret' */
+.opdateret .btn-container {
     display: flex;
     justify-content: flex-end;  /* Skubber knappen til højre */
+    width: 100%;                /* Sørger for, at containeren fylder hele bredden */
 }
 
-.btn-container a.btn {
-    margin-left: auto;   /* Skubber knappen helt til højre */
-}
-
-/* Brug position relative for at flytte knappen mod højre */
-.btn-container a.btn {
+/* Tilmeld-knappen i opdateret-sektionen */
+.btn-tilmeld {
+    background-color: #FF3B30;  /* Juster baggrundsfarve for Tilmeld-knappen */
+    color: white;               /* Juster tekstfarven */
+    padding: 10px 20px;         /* Juster padding (afstand) rundt om knappen */
+    border-radius: 5px;         /* Juster kanterne på knappen */
+    text-decoration: none;      /* Fjern understregning */
+    font-size: 16px;            /* Juster skriftstørrelse */
+    transition: background-color 0.3s ease; /* Tilføj en smooth overgang ved hover */
     position: relative;
-    right: 200px;    /* Brug højre værdi for at skubbe knappen til højre */
-    margin-bottom: 5px;
+    right: 230px;    /* Brug højre værdi for at skubbe knappen til højre */
 }
 
+.btn-tilmeld:hover {
+    background-color: #e68900;  /* Skift baggrundsfarve ved hover */
+}
 
 footer {
     background-color: var(--secondary-color);
