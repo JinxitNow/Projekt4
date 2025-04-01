@@ -67,7 +67,7 @@ nav ul li a {
     margin-right: 10px;
 }
 
-/* Styling af navigation knapper */
+/* Styling af knappen "støt" */
 button {
     background-color: #FF3B30;
     color: #000000;
@@ -104,6 +104,37 @@ button:hover {
     width: 50%;  /* Fylder hele bredden */
     margin-bottom: 20px; /* Lidt afstand mellem tekst og billede */
 }
+
+/* Styling af knapperne */
+.btn-container {
+    display: flex; /* Brug flexbox til at placere knapperne ved siden af hinanden */
+    gap: 10px; /* Afstand mellem knapperne */
+    justify-content: center; /* Centrer knapperne horisontalt */
+    margin-top: 20px; /* Lidt afstand fra andre elementer, f.eks. overskrift */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--highlight-color); /* Brug af den fremhævede farve */
+    color: var(--btn-text-color); /* Hvid tekst */
+    padding: 12px 24px; /* Lidt større knapper for bedre klikbarhed */
+    text-decoration: none; /* Fjerner understregning */
+    font-weight: bold; /* Gør teksten fed */
+    border-radius: 5px; /* Afrundede hjørner */
+    border: 2px solid var(--highlight-color); /* Ramme omkring knappen */
+    text-transform: uppercase; /* Øger læsbarheden med store bogstaver */
+    font-size: 16px; /* Justerer størrelsen af teksten */
+    transition: all 0.3s ease; /* Gør hover-effekterne glattere */
+}
+
+/* Hover-effekt for knappen */
+.btn:hover {
+    background-color: var(--btn-text-color); /* Skifter baggrundsfarven på hover */
+    color: var(--highlight-color); /* Ændrer tekstfarven på hover */
+    border-color: var(--btn-text-color); /* Ændrer rammen på hover */
+}
+
+
 
 /* Sektionen med billedkasser */
 .image-section {
