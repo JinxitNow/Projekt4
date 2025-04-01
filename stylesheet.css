@@ -1,0 +1,114 @@
+/* Farver og styles baseret på Dyrenes Beskyttelse */
+:root {
+    --primary-color: #F7F1E8; /* Baggrundsfarve */
+    --secondary-color: #7D0F02; /* Mørk rød */
+    --highlight-color: #FF3B30; /* Rød til CTA */
+    --text-color: #000000;
+    --btn-text-color: #FFFFFF;
+    --font-family: 'Arial', sans-serif;
+}
+
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 60px 10%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 50%;
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--btn-text-color);
+    color: var(--highlight-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid var(--highlight-color);
+}
+
+.btn:hover {
+    background-color: var(--highlight-color);
+    color: var(--btn-text-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
