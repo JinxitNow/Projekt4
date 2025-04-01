@@ -297,9 +297,45 @@ button:hover {
 
 footer {
     background-color: var(--secondary-color);
-    color: var(--text-color);
+    color: #FFFFFF;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 0px;
+    padding: 20px;
+    margin-top: 0;
     font-size: 14px;
+}
+
+/* Grid layout for footer-sektionen */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* Opretter 4 kolonner med lige bredde */
+    gap: 20px;  /* Afstand mellem kolonnerne */
+    margin-bottom: 20px;  /* Lidt afstand under grid'en */
+    padding: 0 20px;  /* Lidt padding på siderne */
+}
+
+/* Styling af hver kolonne i footeren */
+.footer-box {
+    background-color: var(--secondary-color);  /* Samme baggrundsfarve som footeren */
+    padding: 15px;
+    border-radius: 8px;  /* Afrundede hjørner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Lette skygger for dybde */
+}
+
+.footer-box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-box p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Responsiv design - når skærmbredden er mindre end 768px */
+@media screen and (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;  /* Stabler kolonnerne vertikalt */
+    }
 }
