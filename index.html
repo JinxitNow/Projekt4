@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dyrenes Beskyttelse</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Hjem</a></li>
+                <li><a href="#om-os">Om os</a></li>
+                <li><a href="#dyr-i-behov">Dyr i behov</a></li>
+                <li><a href="#støt-os">Støt os</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hovedsektion -->
+    <section id="home">
+        <h1>Velkommen til Dyrenes Beskyttelse</h1>
+        <p>Vi arbejder for at beskytte og hjælpe dyr i nød.</p>
+        <img src="hero-image.jpg" alt="Billede af dyr i naturen">
+    </section>
+
+    <!-- Om os -->
+    <section id="om-os">
+        <h2>Om Dyrenes Beskyttelse</h2>
+        <p>Dyrenes Beskyttelse er en organisation dedikeret til at beskytte dyr mod mishandling og forsømmelse.</p>
+    </section>
+
+    <!-- Dyr i behov -->
+    <section id="dyr-i-behov">
+        <h2>Dyr i behov</h2>
+        <p>Se hvordan du kan hjælpe dyr i nød og støtte deres velvære.</p>
+        <!-- Eksempler på dyr til adoption -->
+        <div class="dyr-adoption">
+            <h3>Adoptér et dyr</h3>
+            <p>Her kan du finde dyr, der søger et nyt hjem.</p>
+            <img src="dyret.jpg" alt="Billede af et dyr til adoption">
+        </div>
+    </section>
+
+    <!-- Støt os -->
+    <section id="støt-os">
+        <h2>Støt Dyrenes Beskyttelse</h2>
+        <p>Din donation gør en stor forskel for dyr i nød.</p>
+        <a href="donation.html" class="btn-donation">Donér nu</a>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt">
+        <h2>Kontakt os</h2>
+        <p>Du er altid velkommen til at kontakte os for mere information.</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Besked:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send besked</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dyrenes Beskyttelse. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
+</html>
