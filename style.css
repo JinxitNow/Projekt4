@@ -56,36 +56,24 @@ nav ul li a {
     font-size: 14px;
 }
 
+/* Hero-sektionen skal have en vertikal opstilling og centrering */
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;  /* Gør så indholdet bliver stablet lodret */
+    align-items: center;     /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet vertikalt */
     background-color: var(--secondary-color);
     color: white;
     padding: 60px 10%;
+    text-align: center;      /* Centrerer teksten indenfor hero */
 }
 
+/* Hero-text sektionen */
 .hero-text {
-    width: 50%;
+    width: 50%;  /* Fylder hele bredden */
+    margin-bottom: 20px; /* Lidt afstand mellem tekst og billede */
 }
 
-.hero h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.hero img {
-    width: 50%;
-    border-radius: 10px;
-}
 .btn {
     display: inline-block;
     background-color: var(--btn-text-color);
