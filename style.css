@@ -105,12 +105,12 @@ button:hover {
     margin-bottom: 20px; /* Lidt afstand mellem tekst og billede */
 }
 
-/* Styling af knapperne */
+/* Styling af knapperne "giv slik og del" */
 .btn-container {
     display: flex; /* Brug flexbox til at placere knapperne ved siden af hinanden */
-    gap: 10px; /* Afstand mellem knapperne */
-    justify-content: center; /* Centrer knapperne horisontalt */
-    margin-top: 20px; /* Lidt afstand fra andre elementer, f.eks. overskrift */
+    gap: 10px; 
+    justify-content: center; 
+    margin-top: 20px;
 }
 
 .btn {
@@ -123,7 +123,7 @@ button:hover {
     border-radius: 5px; /* Afrundede hjørner */
     border: 2px solid var(--highlight-color); /* Ramme omkring knappen */
     text-transform: uppercase; /* Øger læsbarheden med store bogstaver */
-    font-size: 16px; /* Justerer størrelsen af teksten */
+    font-size: 12px; /* Justerer størrelsen af teksten */
     transition: all 0.3s ease; /* Gør hover-effekterne glattere */
 }
 
@@ -152,13 +152,13 @@ button:hover {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
     margin-bottom: 20px;
 }
 
 /* Styling af hver billede container */
 .image-box img {
-    width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 10px;
     border: 2px solid #ddd;
@@ -167,7 +167,7 @@ button:hover {
 
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--text-color);
     text-align: center;
     padding: 15px 0;
