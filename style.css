@@ -250,7 +250,6 @@ button:hover {
     height: auto;
 }
 
-
 .text-container {
     flex: 2; /* Teksten tager to gange så meget plads som logoet */
     text-align: left; /* Sørger for, at teksten er venstrestillet */
@@ -264,8 +263,25 @@ button:hover {
 
 .text-container p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.2;
     color: #ffffff;
+}
+
+/* Juster Tilmeld-knappen mod højre */
+.btn-container {
+    display: flex;
+    justify-content: flex-end;  /* Skubber knappen til højre */
+}
+
+.btn-container a.btn {
+    margin-left: auto;   /* Skubber knappen helt til højre */
+}
+
+/* Brug position relative for at flytte knappen mod højre */
+.btn-container a.btn {
+    position: relative;
+    right: 200px;    /* Brug højre værdi for at skubbe knappen til højre */
+    margin-bottom: 5px;
 }
 
 
@@ -274,6 +290,6 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 15px 0;
-    margin-top: 40px;
+    margin-top: 0px;
     font-size: 14px;
 }
