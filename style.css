@@ -166,6 +166,48 @@ button:hover {
 
 
 
+/* Styling af sektion 2 - Hold dig opdateret */
+.opdateret {
+    background-color: #f7f1e8; /* Lys baggrund */
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.opdateret-content {
+    display: flex;
+    align-items: center;  /* Centrerer indholdet vertikalt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    gap: 20px; /* Afstand mellem logo og tekst */
+}
+
+.logo-container {
+    flex: 1; /* Dette sørger for, at logoet ikke fylder for meget */
+}
+
+.logo-img {
+    width: 80%; /* Logoet tager op til 80% af containerens bredde */
+    max-width: 200px; /* Maksimal størrelse for logoet */
+    display: block;
+    margin: 0 auto; /* Centrerer logoet indenfor containeren */
+}
+
+.text-container {
+    flex: 2; /* Teksten tager to gange så meget plads som logoet */
+    text-align: left; /* Sørger for, at teksten er venstrestillet */
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
 footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
