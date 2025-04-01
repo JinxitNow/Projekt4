@@ -35,8 +35,7 @@ nav {
     font-size: 20px;
     font-weight: bold;
     color: var(--secondary-color);
-    display: flex;
-}
+    }
 
 nav ul {
     list-style: none;
@@ -68,6 +67,26 @@ nav ul li a {
     margin-right: 10px;
 }
 
+/* Styling af navigation knapper */
+button {
+    background-color: #FF3B30;
+    color: #000000;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    right: 300px;
+    top: 5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 /* Hero-sektionen */
 .hero {
     display: flex;
@@ -84,22 +103,6 @@ nav ul li a {
 .hero-text {
     width: 50%;  /* Fylder hele bredden */
     margin-bottom: 20px; /* Lidt afstand mellem tekst og billede */
-}
-
-.btn {
-    display: inline-block;
-    background-color: var(--btn-text-color);
-    color: var(--highlight-color);
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 2px solid var(--highlight-color);
-}
-
-.btn:hover {
-    background-color: var(--highlight-color);
-    color: var(--btn-text-color);
 }
 
 /* Sektionen med billedkasser */
@@ -130,33 +133,7 @@ nav ul li a {
     border: 2px solid #ddd;
 }
 
-/* Styling af navigation knapper */
-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
-    border: none;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    border-radius: 5px;
-}
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Positioner knapperne */
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-
-}
 
 footer {
     background-color: var(--primary-color);
