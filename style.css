@@ -1,9 +1,8 @@
 /* Farver og styles baseret på Dyrenes Beskyttelse */
 :root {
     --primary-color: #F7F1E8; /* Baggrundsfarve */
-    --secondary-color: #7D0F02; 
+    --secondary-color: #7D0F02; /*secondary color*/
     --highlight-color: #FF3B30; /* CTA-farve */
-    --text-color: #000000;
     --btn-text-color: #FFFFFF;
     --font-family: 'Arial', sans-serif;
 }
@@ -35,17 +34,19 @@ nav {
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: var(--text-color);
+    color: var(--secondary-color);
+    display: flex;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    margin-left: -80px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -56,14 +57,25 @@ nav ul li a {
     font-size: 14px;
 }
 
-/* Hero-sektionen skal have en vertikal opstilling og centrering */
+/* Styling af knappen "Støt" */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right .btn {
+    margin-right: 10px;
+}
+
+/* Hero-sektionen */
 .hero {
     display: flex;
     flex-direction: column;  /* Gør så indholdet bliver stablet lodret */
     align-items: center;     /* Centrerer indholdet horisontalt */
     justify-content: center; /* Centrerer indholdet vertikalt */
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: #F7F1E8 !important; /* Sætter baggrundsfarven og undgår at den bliver overskrevet */
+    color: #000000;
     padding: 60px 10%;
     text-align: center;      /* Centrerer teksten indenfor hero */
 }
@@ -93,7 +105,7 @@ nav ul li a {
 /* Sektionen med billedkasser */
 .image-section {
     background-color: #f2f2f2; /* En anden baggrundsfarve */
-    padding: 40px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -105,17 +117,17 @@ nav ul li a {
 /* Styling af grid containeren */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 kolonner */
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     margin-bottom: 20px;
 }
 
 /* Styling af hver billede container */
 .image-box img {
-    width: 75%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 2px solid #ddd; /* Let kant omkring billederne */
+    border: 2px solid #ddd;
 }
 
 /* Styling af navigation knapper */
@@ -143,14 +155,8 @@ button:hover {
 
 .next {
     right: 10px;
+
 }
-
-
-
-
-
-
-
 
 footer {
     background-color: var(--primary-color);
