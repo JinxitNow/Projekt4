@@ -146,23 +146,27 @@ button:hover {
 .image-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-}
+   }
 
 /* Styling af grid containeren */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 5px;  /* Reducer afstanden mellem billederne */
     margin-bottom: 20px;
 }
 
 /* Styling af hver billede container */
 .image-box img {
-    width: 70%;
+    width: 50%;  /* Justeret til 50% for at gøre billederne mindre */
     height: auto;
     border-radius: 10px;
     border: 2px solid #ddd;
+    color: #F7F1E8;
+    margin-left: 0;  /* Fjern margin */
+    margin-right: 0; /* Fjern margin */
 }
+
 
 /* Styling for sektionen "Vis os..." */
 .visos-section {
