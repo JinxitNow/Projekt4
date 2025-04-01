@@ -164,6 +164,70 @@ button:hover {
     border: 2px solid #ddd;
 }
 
+/* Styling for sektionen "Vis os..." */
+.visos-section {
+    padding: 40px 10%; /* Giver sektionen lidt luft */
+    background-color: #FF3b30; /* Baggrundsfarve for sektionen */
+    text-align: center; /* Centrerer teksten */
+}
+
+.visos-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.visos-section p {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+/* Grid container for de 3 kolonner */
+.visos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre lige store kolonner */
+    gap: 30px; /* Mellemrum mellem kolonnerne */
+    margin-top: 20px;
+}
+
+/* Styling for hver kolonne */
+.visos-item {
+    background-color: #FF3B30;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+    text-align: center;
+}
+
+.ikon-img {
+    width: 40px;  /* Juster størrelsen på ikonerne */
+    height: 40px; /* Sørg for at højden følger med for at bevare billedets proportioner */
+    margin-bottom: 15px;  /* Juster afstanden mellem ikonet og teksten */}
+
+.visos-item i {
+    color: #FF3B30; /* Rød farve for ikonerne */
+    margin-bottom: 15px;
+}
+
+.visos-item h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.visos-item p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Responsiv design - når skærmbredden er mindre end 768px */
+@media screen and (max-width: 768px) {
+    .visos-grid {
+        grid-template-columns: 1fr; /* Stabler kolonnerne vertikalt */
+    }
+}
 
 
 /* Styling af sektion 2 - Hold dig opdateret */
