@@ -165,7 +165,6 @@ button:hover {
     color: #F7F1E8;
     margin-left: 0;  /* Fjern margin */
     margin-right: 0; /* Fjern margin */
-    margin-bottom: 50px;
 }
 
 
@@ -338,4 +337,36 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr;  /* Stabler kolonnerne vertikalt */
     }
+
+    /* Containeren for ikonerne */
+.footer-icons {
+    display: flex;
+    justify-content: space-around;  /* Laver lige afstand mellem ikonerne */
+    margin-top: 10px;  /* Lidt afstand fra teksten */
+}
+
+/* Styling af hvert ikon */
+.footer-icon {
+    font-size: 8px;
+    color: #fff;  /* Hvid farve på ikonerne */
+    text-decoration: none;  /* Fjerner underline */
+    padding: 2px;  /* Mindre padding for at reducere størrelsen */
+    transition: transform 0.3s ease;  /* Blød overgang til transformering */
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);  /* Ændret fra 1.2 til 1.1 for mindre hover-effekt */
+}
+
+/* Hvis du ønsker at justere ikonerne for mobilvisning */
+@media screen and (max-width: 768px) {
+    .footer-icons {
+        justify-content: center;  /* Centrerer ikonerne på små skærme */
+    }
+    .footer-icon {
+        font-size: 4px; 
+        padding: 1px;
+}
+
+
 }
