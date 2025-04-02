@@ -1,6 +1,6 @@
 /* Farver og styles baseret på Dyrenes Beskyttelse */
 :root {
-    --primary-color: #F7F1E8; /* Baggrundsfarve */
+    --primary-color: #f5f0e6; /* Baggrundsfarve */
     --secondary-color: #7D0F02; /*secondary color*/
     --highlight-color: #FF3B30; /* CTA-farve */
     --btn-text-color: #FFFFFF;
@@ -93,11 +93,11 @@ button:hover {
     flex-direction: column;  /* Gør så indholdet bliver stablet lodret */
     align-items: center;     /* Centrerer indholdet horisontalt */
     justify-content: center; /* Centrerer indholdet vertikalt */
-    background-color: #F7F1E8 !important; /* Sætter baggrundsfarven og undgår at den bliver overskrevet */
+    background-color: #f5f0e6;
     color: #000000;
     padding: 60px 10%;
     text-align: center;      /* Centrerer teksten indenfor hero */
-}
+    }
 
 /* Hero-text sektionen */
 .hero-text {
@@ -165,6 +165,7 @@ button:hover {
     color: #F7F1E8;
     margin-left: 0;  /* Fjern margin */
     margin-right: 0; /* Fjern margin */
+    margin-bottom: 50px;
 }
 
 
