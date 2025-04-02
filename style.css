@@ -103,7 +103,7 @@ button:hover {
 .hero-text {
     width: 50%;  /* Fylder hele bredden */
     margin-bottom: 20px; /* Lidt afstand mellem tekst og billede */
-}
+   }
 
 /* Styling af knapperne "giv slik og del" */
 .btn-container {
@@ -134,32 +134,32 @@ button:hover {
     border-color: var(--btn-text-color); /* Ændrer rammen på hover */
 }
 
-
-
 /* Sektionen med billedkasser */
 .image-section {
-    background-color: #f2f2f2; /* En anden baggrundsfarve */
-    padding: 10px;
+    background-color: #ffffff; /* En anden baggrundsfarve */
+    padding: 200px;
     text-align: center;
 }
 
 .image-section h2 {
     font-size: 36px;
-    margin-bottom: 20px;
-   }
+    margin-bottom: 15px;
+}
 
 /* Styling af grid containeren */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;  /* Reducer afstanden mellem billederne */
-    margin-bottom: 20px;
+    grid-template-columns: repeat(3, 1fr);  /* 3 kolonner med lige stor bredde */
+    gap: 20px;  /* Reduceret afstand mellem billederne både vandret og lodret */
+    margin-bottom: 10px;
+    justify-items: center;  /* Centrerer billederne vandret */
+    align-items: center;  /* Centrerer billederne lodret */
 }
 
 /* Styling af hver billede container */
 .image-box img {
-    width: 50%;  /* Justeret til 50% for at gøre billederne mindre */
-    height: auto;
+    width: 90%;  /* Juster billedets størrelse til 90% af gridens størrelse */
+    height: auto;  /* Beholder proportionerne */
     border-radius: 10px;
     border: 2px solid #ddd;
     color: #F7F1E8;
@@ -173,11 +173,12 @@ button:hover {
     padding: 40px 10%; /* Giver sektionen lidt luft */
     background-color: #FF3b30; /* Baggrundsfarve for sektionen */
     text-align: center; /* Centrerer teksten */
+    margin-top: -140px;
 }
 
 .visos-section h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
     color: #FFFFFF;
 }
 
