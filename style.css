@@ -219,6 +219,20 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/*Justering af ikon5 talrække */
+.centered-image-section {
+    background-color: #ffffff; /* En anden baggrundsfarve */
+    align-items: center;
+    margin-top: 50px;}
+
+.centered-image-section {
+    text-align: center;
+}
+
+
+
+
+
 /* Styling for sektionen "Vis os..." */
 .visos-section {
     padding: 40px 10%; /* Giver sektionen lidt luft */
