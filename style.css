@@ -335,9 +335,14 @@ footer {
     display: inline-block;  /* Gør hvert tekstafsnit til en inline-block */
 }
 
-/* Hover-effekt på paragrafteksten */
-.footer-box p:hover {
-    text-decoration: underline;  /* Tilføjer understregning ved hover */
+/* Hover-effekt på hver linje */
+.footer-box p span {
+    display: inline-block; /* Sørger for at hver linje kan hoveres individuelt */
+    transition: text-decoration 0.3s ease; /* Gør hover-effekten glat */
+}
+
+.footer-box p span:hover {
+    text-decoration: underline;  /* Understreger linjen ved hover */
 }
 
 .footer-image {
