@@ -137,7 +137,7 @@ button:hover {
     border-color: var(--btn-text-color); /* Ændrer rammen på hover */
 }
 
-/* Sektionen med billedkasser */
+/* Sektionen med 9 billedkasser */
 .image-section {
     background-color: #ffffff; /* En anden baggrundsfarve */
     padding: 200px;
@@ -170,6 +170,37 @@ button:hover {
     color: #F7F1E8;
     margin-left: 0;  /* Fjern margin */
     margin-right: 0; /* Fjern margin */
+}
+
+/* Styling for knappen under billederne */
+.image-box .btn {
+    display: inline-block;
+    background-color: #FF3B30;  /* Fremhævet farve */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-effekt for knappen */
+.image-box .btn:hover {
+    background-color: #e68900;
+}
+
+/* Styling for link under knappen */
+.image-box .link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #007BFF; /* Blå farve for linket */
+}
+
+.image-box .link:hover {
+    text-decoration: underline;
 }
 
 
