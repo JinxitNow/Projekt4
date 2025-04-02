@@ -124,7 +124,7 @@ button:hover {
     text-decoration: none; /* Fjerner understregning */
     font-weight: bold; /* Gør teksten fed */
     border-radius: 5px; /* Afrundede hjørner */
-    border: 2px solid var(--highlight-color); /* Ramme omkring knappen */
+    border: 1px solid var(--highlight-color); /* Ramme omkring knappen */
     text-transform: uppercase; /* Øger læsbarheden med store bogstaver */
     font-size: 12px; /* Justerer størrelsen af teksten */
     transition: all 0.3s ease; /* Gør hover-effekterne glattere */
@@ -175,7 +175,7 @@ button:hover {
 /* Styling for knappen under billederne */
 .image-box .btn {
     display: inline-block;
-    background-color: #FF3B30;  /* Fremhævet farve */
+    background-color: #000000;
     color: #FFFFFF;
     padding: 10px 20px;
     text-decoration: none;
@@ -187,7 +187,7 @@ button:hover {
 
 /* Hover-effekt for knappen */
 .image-box .btn:hover {
-    background-color: #e68900;
+    background-color: #7D0F02;;
 }
 
 /* Styling for link under knappen */
@@ -196,7 +196,7 @@ button:hover {
     margin-top: 10px;
     font-size: 14px;
     text-decoration: none;
-    color: #007BFF; /* Blå farve for linket */
+    color: #000000; /* Blå farve for linket */
 }
 
 .image-box .link:hover {
