@@ -161,23 +161,28 @@ button:hover {
     align-items: center;  /* Centrerer billederne lodret */
 }
 
-/* Venstrejustering af indhold i image-box */
+/* Styling for hver billede container */
 .image-box {
-    text-align: left; /* Justerer indholdet til venstre */
+    background-color: #f5f0e6; /* Tilføj baggrundsfarve */
+    text-align: left;           /* Justerer indholdet til venstre */
     margin-left: 20px;
     margin-top: 10px;
+    padding: 15px;              /* Tilføj lidt indre margin for bedre layout */
+    border-radius: 10px;        /* Afrundede hjørner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
 }
 
-/* Styling af hver billede container */
+/* Styling af billedet i containeren */
 .image-box img {
-    width: 90%;  /* Juster billedets størrelse til 90% af gridens størrelse */
-    height: auto;  /* Beholder proportionerne */
+    width: 90%;                 /* Juster billedets størrelse til 90% af gridens størrelse */
+    height: auto;               /* Beholder proportionerne */
     border-radius: 10px;
     border: 2px solid #ddd;
     color: #F7F1E8;
-    margin-left: 0;  /* Fjern margin */
-    margin-right: 0; /* Fjern margin */
+    margin-left: 0;             /* Fjern margin */
+    margin-right: 0;            /* Fjern margin */
 }
+
 
 /* Styling for knappen under billederne */
 .image-box .btn {
@@ -228,10 +233,6 @@ button:hover {
 .centered-image-section {
     text-align: center;
 }
-
-
-
-
 
 /* Styling for sektionen "Vis os..." */
 .visos-section {
