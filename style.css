@@ -95,14 +95,17 @@ button:hover {
     justify-content: center; /* Centrerer indholdet vertikalt */
     background-color: #f5f0e6;
     color: #000000;
-    padding: 60px 10%;
+    padding: 30px 10%;
     text-align: center;      /* Centrerer teksten indenfor hero */
+    margin-bottom: 20px;
     }
 
 /* Hero-text sektionen */
 .hero-text {
     width: 50%;  /* Fylder hele bredden */
-    margin-bottom: 20px; /* Lidt afstand mellem tekst og billede */
+    margin-top: 20px;
+    margin-bottom: -40px;
+    padding: 20px;
    }
 
 /* Styling af knapperne "giv slik og del" */
@@ -139,11 +142,13 @@ button:hover {
     background-color: #ffffff; /* En anden baggrundsfarve */
     padding: 200px;
     text-align: center;
+    margin-top: 100px;
 }
 
 .image-section h2 {
     font-size: 36px;
     margin-bottom: 15px;
+    margin-top: -150px;
 }
 
 /* Styling af grid containeren */
