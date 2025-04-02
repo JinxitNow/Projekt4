@@ -326,10 +326,18 @@ footer {
     color: #fff;
 }
 
+/* Styling af paragrafen (tekst) */
 .footer-box p {
     font-size: 14px;
     color: #fff;
     line-height: 1.6;
+    white-space: nowrap;  /* Forhindrer linjeskift */
+    display: inline-block;  /* Gør hvert tekstafsnit til en inline-block */
+}
+
+/* Hover-effekt på paragrafteksten */
+.footer-box p:hover {
+    text-decoration: underline;  /* Tilføjer understregning ved hover */
 }
 
 .footer-image {
