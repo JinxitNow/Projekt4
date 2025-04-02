@@ -155,7 +155,7 @@ button:hover {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);  /* 3 kolonner med lige stor bredde */
-    gap: 20px;  /* Reduceret afstand mellem billederne både vandret og lodret */
+    
     margin-bottom: 10px;
     justify-items: center;  /* Centrerer billederne vandret */
     align-items: center;  /* Centrerer billederne lodret */
