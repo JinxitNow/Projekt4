@@ -161,21 +161,23 @@ button {
 
 /* Styling af knappen "Del #Givdyrenefredagsslik" */
 #del-givdyrenefredagsslik {
-  background-color: #ff3b30; /* CTA farve */
-  color: #ffffff; /* Hvid tekst */
+  background-color: var(--primary-color);
+  color: #000000;
   padding: 12px 30px;
   font-size: 16px;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: 2px solid #000000;
 }
 
 /* Hover-effekt på knappen "Del #Givdyrenefredagsslik" */
 #del-givdyrenefredagsslik:hover {
-  background-color: #d93025; /* Mørkere farve ved hover */
+  background-color: #d93025;
+  border: 2px solid #d93025;
 }
+
 
 
 /* Sektionen med 9 billedkasser */
