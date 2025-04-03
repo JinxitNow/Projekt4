@@ -412,17 +412,22 @@ button {
   width: 100%; 
 }
 
-/* Tilmeld-knappen i opdateret-sektionen */
 .btn-tilmeld {
-  background-color: #a00000;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
+  font-size: 16px; /* Juster tekststørrelse */
   padding: 10px 20px;
-  border: 2px solid white;
-  border-radius: 0px;
-  display: inline-block;
+  background-color: #ff3b30;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
 }
+
+.btn-tilmeld i {
+  margin-left: 10px; /* Placer pilen lidt til højre for teksten */
+  font-size: 18px; /* Juster størrelsen på pilen */
+}
+
 
 footer {
   background-color: var(--secondary-color);
