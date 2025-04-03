@@ -17,7 +17,7 @@ body {
 
 header {
   background-color: var(--primary-color);
-  padding: 15px 0;
+  padding: 20px 0;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
@@ -32,7 +32,7 @@ nav {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: var(--secondary-color);
 }
@@ -41,19 +41,20 @@ nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  margin-left: -80px;
+  margin-left: -110px;
 }
 
 nav ul li {
+  font-weight: 200;
   margin: 0 10px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: var(--text-color);
-  font-weight: bold;
+  font-weight: 150;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Styling af knappen "Støt" */
@@ -74,10 +75,10 @@ nav ul li a {
 /* Styling af knappen "støt" */
 button {
   background-color: #ff3b30;
-  color: #000000;
-  font-size: 24px;
+  color: black; 
+  font-size: 32px;
+  padding: 15px 30px;
   border: none;
-  padding: 10px;
   position: absolute;
   right: 300px;
   top: 5%;
@@ -86,9 +87,6 @@ button {
   border-radius: 0px;
 }
 
-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
 
 /* Hero-sektionen */
 .hero {
@@ -99,7 +97,7 @@ button:hover {
   background-color: #f5f0e6;
   color: #000000;
   padding: 30px 10%;
-  text-align: center; /* Centrerer teksten indenfor hero */
+  text-align: center;
   margin-bottom: 20px;
 }
 
