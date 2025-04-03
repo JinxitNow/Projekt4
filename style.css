@@ -31,11 +31,20 @@ nav {
   padding: 0 20px;
 }
 
+/* Styling af logoet i headeren */
 .logo {
-  font-size: 15px;
-  font-weight: bold;
-  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
+
+/* Styling af billedet inde i logo containeren */
+.logo img {
+  max-width: 170px;
+  height: auto;
+}
+
 
 nav ul {
   list-style: none;
@@ -54,7 +63,7 @@ nav ul li a {
   color: var(--text-color);
   font-weight: 150;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Styling af knappen "Støt" */
@@ -76,7 +85,7 @@ nav ul li a {
 button {
   background-color: #ff3b30;
   color: black; 
-  font-size: 32px;
+  font-size: 28px;
   padding: 15px 30px;
   border: none;
   position: absolute;
@@ -117,32 +126,61 @@ button {
   margin-top: 20px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: var(--highlight-color); /* Brug af den fremhævede farve */
-  color: var(--btn-text-color); /* Hvid tekst */
-  padding: 12px 24px; /* Lidt større knapper for bedre klikbarhed */
-  text-decoration: none; /* Fjerner understregning */
-  font-weight: bold; /* Gør teksten fed */
-  border-radius: 0px; /* Afrundede hjørner */
-  border: 1px solid var(--highlight-color); /* Ramme omkring knappen */
-  text-transform: uppercase; /* Øger læsbarheden med store bogstaver */
-  font-size: 12px; /* Justerer størrelsen af teksten */
-  transition: all 0.3s ease; /* Gør hover-effekterne glattere */
+/* Styling af knappen "Støt" */
+#stot-knap {
+  background-color: #ff3b30;
+  color: black;
+  font-size: 16px;
+  font-weight:bold;
+  padding: 15px 30px;
+  border: none;
+  position: absolute;
+  right: 300px;
+  top: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 0px;
 }
 
-/* Hover-effekt for knappen */
-.btn:hover {
-  background-color: var(
-    --btn-text-color
-  ); /* Skifter baggrundsfarven på hover */
-  color: var(--highlight-color); /* Ændrer tekstfarven på hover */
-  border-color: var(--btn-text-color); /* Ændrer rammen på hover */
+/* Styling af knappen "Giv fredagsslik til dyrene" */
+#giv-fredagsslik {
+  background-color: #7d0f02;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
 }
+
+/* Hover-effekt på knappen "Giv fredagsslik til dyrene" */
+#giv-fredagsslik:hover {
+  background-color: #ff3b30;
+}
+
+/* Styling af knappen "Del #Givdyrenefredagsslik" */
+#del-givdyrenefredagsslik {
+  background-color: #ff3b30; /* CTA farve */
+  color: #ffffff; /* Hvid tekst */
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover-effekt på knappen "Del #Givdyrenefredagsslik" */
+#del-givdyrenefredagsslik:hover {
+  background-color: #d93025; /* Mørkere farve ved hover */
+}
+
 
 /* Sektionen med 9 billedkasser */
 .image-section {
-  background-color: #ffffff; /* En anden baggrundsfarve */
+  background-color: #ffffff;
   padding: 200px;
   text-align: center;
   margin-top: 100px;
