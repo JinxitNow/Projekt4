@@ -309,28 +309,26 @@ button:hover {
 /* Styling af sektion 2 - Hold dig opdateret */
 .opdateret {
   background-color: #a00000;
-  padding: 5px 10%;
-  text-align: right;
+  padding: 30px;
+  text-align: left;
 }
 
 .opdateret-content {
   display: flex;
+  gap: 700px;
   align-items: center;
-  justify-content: center;
-  gap: 490px;
 }
 
-/* Ændrer logoets størrelse i forhold til skærmens bredde */
 .opdateret-content .ikon-img {
-    width: 5vw; 
-    height: auto;
- }
+  width: 15vw;
+  height: auto;
+}
 
 .text-container {
   flex: 2; /* Teksten tager to gange så meget plads som logoet */
-  text-align: left; 
-  font-weight: 200;
-  }
+  text-align: left;
+  font-weight: 240;
+}
 
 .text-container h2 {
   font-size: 30px;
@@ -339,7 +337,8 @@ button:hover {
 }
 
 .text-container p {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 240;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -347,18 +346,20 @@ button:hover {
 /* Styling for knappen i sektionen 'Hold dig opdateret' */
 .opdateret .btn-container {
   display: flex;
+  justify-content: flex-start;
   width: 100%; 
 }
 
 /* Tilmeld-knappen i opdateret-sektionen */
 .btn-tilmeld {
   background-color: #a00000;
-  color: white;  /* Hvid tekst */
-  font-size: 16px;
+  color: white;
+  font-size: 18px;
   text-decoration: none;
   padding: 10px 20px;
   border: 2px solid white;
   border-radius: 0px;
+  display: inline-block;
 }
 
 footer {
@@ -373,17 +374,15 @@ footer {
 /* Grid layout for footer-sektionen */
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr ); /* Opretter 4 kolonner med lige bredde */
-  gap: 20px; /* Afstand mellem kolonnerne */
+  grid-template-columns: repeat(4, 1fr );
+  gap: 20px;
   margin-bottom: 20px;
   padding: 0 20px;
 }
 
 /* Styling af hver kolonne i footeren */
 .footer-box {
-  background-color: var(
-    --secondary-color
-  ); /* Samme baggrundsfarve som footeren */
+  background-color: var(--secondary-color);
   padding: 15px;
 }
 
@@ -404,18 +403,18 @@ footer {
 
 /* Hover-effekt på hver linje */
 .footer-box p span {
-  display: inline-block; /* Sørger for at hver linje kan hoveres individuelt */
-  transition: text-decoration 0.3s ease; /* Gør hover-effekten glat */
+  display: inline-block;
+  transition: text-decoration 0.3s ease;
 }
 
 .footer-box p span:hover {
-  text-decoration: underline; /* Understreger linjen ved hover */
+  text-decoration: underline;
 }
 
 .footer-image {
   width: 50%;
   max-width: 200px;
-  height: auto; /* Bevarer proportionerne på billedet */
+  height: auto;
   margin-top: 20px;
 }
 
