@@ -1,431 +1,436 @@
 /* Farver og styles baseret på Dyrenes Beskyttelse */
 :root {
-    --primary-color: #f5f0e6; /* Baggrundsfarve */
-    --secondary-color: #7D0F02; /*secondary color*/
-    --highlight-color: #FF3B30; /* CTA-farve */
-    --btn-text-color: #FFFFFF;
-    --font-family: 'Arial', sans-serif;
+  --primary-color: #f5f0e6; /* Baggrundsfarve */
+  --secondary-color: #7d0f02; /*secondary color*/
+  --highlight-color: #ff3b30; /* CTA-farve */
+  --btn-text-color: #ffffff;
+  --font-family: "Arial", sans-serif;
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: var(--primary-color);
-    padding: 15px 0;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--secondary-color);
-    }
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-left: -80px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-left: -80px;
 }
 
 nav ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 /* Styling af knappen "Støt" */
 .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 5px;
+  width: 100%;
 }
 
-.nav-right .btn {
-    margin-right: 10px;
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 /* Styling af knappen "støt" */
 button {
-    background-color: #FF3B30;
-    color: #000000;
-    font-size: 24px;
-    border: none;
-    padding: 10px;
-    position: absolute;
-    right: 300px;
-    top: 5%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #ff3b30;
+  color: #000000;
+  font-size: 24px;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  right: 300px;
+  top: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 0px;
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
-
 
 /* Hero-sektionen */
 .hero {
-    display: flex;
-    flex-direction: column;  /* Gør så indholdet bliver stablet lodret */
-    align-items: center;     /* Centrerer indholdet horisontalt */
-    justify-content: center; /* Centrerer indholdet vertikalt */
-    background-color: #f5f0e6;
-    color: #000000;
-    padding: 30px 10%;
-    text-align: center;      /* Centrerer teksten indenfor hero */
-    margin-bottom: 20px;
-    }
+  display: flex;
+  flex-direction: column; /* Gør så indholdet bliver stablet lodret */
+  align-items: center; /* Centrerer indholdet horisontalt */
+  justify-content: center; /* Centrerer indholdet vertikalt */
+  background-color: #f5f0e6;
+  color: #000000;
+  padding: 30px 10%;
+  text-align: center; /* Centrerer teksten indenfor hero */
+  margin-bottom: 20px;
+}
 
 /* Hero-text sektionen */
 .hero-text {
-    width: 50%;  /* Fylder hele bredden */
-    margin-top: 20px;
-    margin-bottom: -40px;
-    padding: 20px;
-   }
+  width: 50%; /* Fylder hele bredden */
+  margin-top: 20px;
+  margin-bottom: -40px;
+  padding: 20px;
+}
 
 /* Styling af knapperne "giv slik og del" */
 .btn-container {
-    display: flex; /* Brug flexbox til at placere knapperne ved siden af hinanden */
-    gap: 10px; 
-    justify-content: center; 
-    margin-top: 20px;
+  display: flex; /* Brug flexbox til at placere knapperne ved siden af hinanden */
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .btn {
-    display: inline-block;
-    background-color: var(--highlight-color); /* Brug af den fremhævede farve */
-    color: var(--btn-text-color); /* Hvid tekst */
-    padding: 12px 24px; /* Lidt større knapper for bedre klikbarhed */
-    text-decoration: none; /* Fjerner understregning */
-    font-weight: bold; /* Gør teksten fed */
-    border-radius: 5px; /* Afrundede hjørner */
-    border: 1px solid var(--highlight-color); /* Ramme omkring knappen */
-    text-transform: uppercase; /* Øger læsbarheden med store bogstaver */
-    font-size: 12px; /* Justerer størrelsen af teksten */
-    transition: all 0.3s ease; /* Gør hover-effekterne glattere */
+  display: inline-block;
+  background-color: var(--highlight-color); /* Brug af den fremhævede farve */
+  color: var(--btn-text-color); /* Hvid tekst */
+  padding: 12px 24px; /* Lidt større knapper for bedre klikbarhed */
+  text-decoration: none; /* Fjerner understregning */
+  font-weight: bold; /* Gør teksten fed */
+  border-radius: 0px; /* Afrundede hjørner */
+  border: 1px solid var(--highlight-color); /* Ramme omkring knappen */
+  text-transform: uppercase; /* Øger læsbarheden med store bogstaver */
+  font-size: 12px; /* Justerer størrelsen af teksten */
+  transition: all 0.3s ease; /* Gør hover-effekterne glattere */
 }
 
 /* Hover-effekt for knappen */
 .btn:hover {
-    background-color: var(--btn-text-color); /* Skifter baggrundsfarven på hover */
-    color: var(--highlight-color); /* Ændrer tekstfarven på hover */
-    border-color: var(--btn-text-color); /* Ændrer rammen på hover */
+  background-color: var(
+    --btn-text-color
+  ); /* Skifter baggrundsfarven på hover */
+  color: var(--highlight-color); /* Ændrer tekstfarven på hover */
+  border-color: var(--btn-text-color); /* Ændrer rammen på hover */
 }
 
 /* Sektionen med 9 billedkasser */
 .image-section {
-    background-color: #ffffff; /* En anden baggrundsfarve */
-    padding: 200px;
-    text-align: center;
-    margin-top: 100px;
+  background-color: #ffffff; /* En anden baggrundsfarve */
+  padding: 200px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .image-section h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-    margin-top: -150px;
+  font-size: 36px;
+  margin-bottom: 15px;
+  margin-top: -150px;
 }
 
 /* Styling af grid containeren */
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 kolonner med lige stor bredde */
-    gap: 20px;
-    margin-bottom: 10px;
-    justify-items: center;  /* Centrerer billederne vandret */
-    align-items: center;  /* Centrerer billederne lodret */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolonner med lige stor bredde */
+  gap: 20px;
+  margin-bottom: 10px;
+  justify-items: center; /* Centrerer billederne vandret */
+  align-items: center; /* Centrerer billederne lodret */
 }
 
 /* Styling for hver billede container */
 .image-box {
-    background-color: #f5f0e6; /* Tilføj baggrundsfarve */
-    text-align: left;           /* Justerer indholdet til venstre */
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 15px;              /* Tilføj lidt indre margin for bedre layout */
-    border-radius: 10px;        /* Afrundede hjørner */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+  background-color: #f5f0e6; /* Tilføj baggrundsfarve */
+  text-align: left; /* Justerer indholdet til venstre */
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 15px; /* Tilføj lidt indre margin for bedre layout */
+  border-radius: 0px; /* Afrundede hjørner */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
 }
 
 /* Styling af billedet i containeren */
 .image-box img {
-    width: 90%;                 /* Juster billedets størrelse til 90% af gridens størrelse */
-    height: auto;               /* Beholder proportionerne */
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    color: #F7F1E8;
-    margin-left: 0;             /* Fjern margin */
-    margin-right: 0;            /* Fjern margin */
+  width: 90%; /* Juster billedets størrelse til 90% af gridens størrelse */
+  height: auto; /* Beholder proportionerne */
+  border-radius: 0px;
+  border: 2px solid #ddd;
+  color: #f7f1e8;
+  margin-left: 0; /* Fjern margin */
+  margin-right: 0; /* Fjern margin */
 }
-
 
 /* Styling for knappen under billederne */
 .image-box .btn {
-    display: inline-block;
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: -70px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0px;
+  margin-top: -70px;
+  transition: background-color 0.3s ease;
 }
 
 /* Hover-effekt for knappen */
 .image-box .btn:hover {
-    background-color: #7D0F02;;
+  background-color: #7d0f02;
 }
 
 /* Styling for link under knappen */
 .image-box .link {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #000000; /* Blå farve for linket */
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000; /* Blå farve for linket */
 }
 
 .image-box .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Venstrejustering af h4 i image-box */
 .image-box h4 {
-    text-align: left; /* Venstrejuster overskriften */
-    margin-left: 5px;
-    font-size: 24px;
-    margin-top: 5px; /* Tilføj eventuelt lidt margen for afstand fra billedet */
-    margin-bottom: 10px;
+  text-align: left; /* Venstrejuster overskriften */
+  margin-left: 5px;
+  font-size: 24px;
+  margin-top: 5px; /* Tilføj eventuelt lidt margen for afstand fra billedet */
+  margin-bottom: 10px;
 }
 
 /*Justering af ikon5 talrække */
 .centered-image-section {
-    background-color: #ffffff; /* En anden baggrundsfarve */
-    align-items: center;
-    margin-top: 50px;}
+  background-color: #ffffff; /* En anden baggrundsfarve */
+  align-items: center;
+  margin-top: 50px;
+}
 
 .centered-image-section {
-    text-align: center;
+  text-align: center;
 }
 
 /* Styling for sektionen "Vis os..." */
 .visos-section {
-    padding: 40px 10%; /* Giver sektionen lidt luft */
-    background-color: #FF3b30; /* Baggrundsfarve for sektionen */
-    text-align: center; /* Centrerer teksten */
-    margin-top: -140px;
+  padding: 40px 10%; /* Giver sektionen lidt luft */
+  background-color: #ff3b30; /* Baggrundsfarve for sektionen */
+  text-align: center; /* Centrerer teksten */
+  margin-top: -140px;
 }
 
 .visos-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;    
-    color: #FFFFFF;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .visos-section p {
-    font-size: 16px;
-    color: #FFFFFF;
-    margin-bottom: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 /* Grid container for de 3 kolonner */
 .visos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tre lige store kolonner */
-    gap: 30px; /* Mellemrum mellem kolonnerne */
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tre lige store kolonner */
+  gap: 30px; /* Mellemrum mellem kolonnerne */
+  margin-top: 20px;
 }
 
 /* Styling for hver kolonne */
 .visos-item {
-    background-color: #FF3B30;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
-    text-align: center;
+  background-color: #ff3b30;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+  text-align: center;
 }
 
 .ikon-img {
-    width: 40px;  /* Juster størrelsen på ikonerne */
-    height: 40px; /* Sørg for at højden følger med for at bevare billedets proportioner */
-    margin-bottom: 15px;  /* Juster afstanden mellem ikonet og teksten */}
+  width: 40px; /* Juster størrelsen på ikonerne */
+  height: 40px; /* Sørg for at højden følger med for at bevare billedets proportioner */
+  margin-bottom: 15px; /* Juster afstanden mellem ikonet og teksten */
+}
 
 .visos-item i {
-    color: #FF3B30; /* Rød farve for ikonerne */
-    margin-bottom: 15px;
+  color: #ff3b30; /* Rød farve for ikonerne */
+  margin-bottom: 15px;
 }
 
 .visos-item h3 {
-    font-size: 22px;
-    color: #ffffff;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .visos-item p {
-    font-size: 14px;
-    color: #ffffff;
-    line-height: 1.6;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
 /* Responsiv design - når skærmbredden er mindre end 768px */
 @media screen and (max-width: 768px) {
-    .visos-grid {
-        grid-template-columns: 1fr; /* Stabler kolonnerne vertikalt */
-    }
+  .visos-grid {
+    grid-template-columns: 1fr; /* Stabler kolonnerne vertikalt */
+  }
 }
-
 
 /* Styling af sektion 2 - Hold dig opdateret */
 .opdateret {
-    background-color: #A00000; 
-    padding: 40px 10%;
-    text-align: center;
+  background-color: #a00000;
+  padding: 40px 10%;
+  text-align: center;
 }
 
 .opdateret-content {
-    display: flex;
-    align-items: center;  /* Centrerer indholdet vertikalt */
-    justify-content: center; /* Centrerer indholdet horisontalt */
-    gap: 20px; /* Afstand mellem logo og tekst */
+  display: flex;
+  align-items: center; /* Centrerer indholdet vertikalt */
+  justify-content: center; /* Centrerer indholdet horisontalt */
+  gap: 20px; /* Afstand mellem logo og tekst */
 }
 
 /* Ændrer logoets størrelse i forhold til skærmens bredde */
 .ikon-img {
-    width: 10vw; /* Logoet fylder 10% af skærmens bredde */
-    height: auto;
+  width: 10vw; /* Logoet fylder 10% af skærmens bredde */
+  height: auto;
 }
 
 .text-container {
-    flex: 2; /* Teksten tager to gange så meget plads som logoet */
-    text-align: left; /* Sørger for, at teksten er venstrestillet */
+  flex: 2; /* Teksten tager to gange så meget plads som logoet */
+  text-align: left; /* Sørger for, at teksten er venstrestillet */
 }
 
 .text-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #FFFFFF;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .text-container p {
-    font-size: 16px;
-    line-height: 1.2;
-    color: #ffffff;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
 }
 
 /* Styling for knappen i sektionen 'Hold dig opdateret' */
 .opdateret .btn-container {
-    display: flex;
-    justify-content: flex-end;  /* Skubber knappen til højre */
-    width: 100%;                /* Sørger for, at containeren fylder hele bredden */
+  display: flex;
+  justify-content: flex-end; /* Skubber knappen til højre */
+  width: 100%; /* Sørger for, at containeren fylder hele bredden */
 }
 
 /* Tilmeld-knappen i opdateret-sektionen */
 .btn-tilmeld {
-    background-color: #FF3B30;  /* Juster baggrundsfarve for Tilmeld-knappen */
-    color: white;               /* Juster tekstfarven */
-    padding: 10px 20px;         /* Juster padding (afstand) rundt om knappen */
-    border-radius: 5px;         /* Juster kanterne på knappen */
-    text-decoration: none;      /* Fjern understregning */
-    font-size: 16px;            /* Juster skriftstørrelse */
-    transition: background-color 0.3s ease; /* Tilføj en smooth overgang ved hover */
-    position: relative;
-    right: 230px;    /* Brug højre værdi for at skubbe knappen til højre */
+  background-color: #ff3b30; /* Juster baggrundsfarve for Tilmeld-knappen */
+  color: white; /* Juster tekstfarven */
+  padding: 10px 20px; /* Juster padding (afstand) rundt om knappen */
+  border-radius: 0px; /* Juster kanterne på knappen */
+  text-decoration: none; /* Fjern understregning */
+  font-size: 16px; /* Juster skriftstørrelse */
+  transition: background-color 0.3s ease; /* Tilføj en smooth overgang ved hover */
+  position: relative;
+  right: 230px; /* Brug højre værdi for at skubbe knappen til højre */
 }
 
 .btn-tilmeld:hover {
-    background-color: #e68900;  /* Skift baggrundsfarve ved hover */
+  background-color: #e68900; /* Skift baggrundsfarve ved hover */
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: #FFFFFF;
-    text-align: left;
-    padding: 20px;
-    margin-top: 0;
-    font-size: 14px;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  text-align: left;
+  padding: 20px;
+  margin-top: 0;
+  font-size: 14px;
 }
 
 /* Grid layout for footer-sektionen */
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* Opretter 4 kolonner med lige bredde */
-    gap: 20px;  /* Afstand mellem kolonnerne */
-    margin-bottom: 20px;  /* Lidt afstand under grid'en */
-    padding: 0 20px;  /* Lidt padding på siderne */
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Opretter 4 kolonner med lige bredde */
+  gap: 20px; /* Afstand mellem kolonnerne */
+  margin-bottom: 20px; /* Lidt afstand under grid'en */
+  padding: 0 20px; /* Lidt padding på siderne */
 }
 
 /* Styling af hver kolonne i footeren */
 .footer-box {
-    background-color: var(--secondary-color);  /* Samme baggrundsfarve som footeren */
-    padding: 15px;
-   
+  background-color: var(
+    --secondary-color
+  ); /* Samme baggrundsfarve som footeren */
+  padding: 15px;
 }
 
 .footer-box h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 /* Styling af paragrafen (tekst) */
 .footer-box p {
-    font-size: 14px;
-    color: #fff;
-    line-height: 1.6;
-    white-space: nowrap;  /* Forhindrer linjeskift */
-    display: inline-block;  /* Gør hvert tekstafsnit til en inline-block */
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.6;
+  white-space: nowrap; /* Forhindrer linjeskift */
+  display: inline-block; /* Gør hvert tekstafsnit til en inline-block */
 }
 
 /* Hover-effekt på hver linje */
 .footer-box p span {
-    display: inline-block; /* Sørger for at hver linje kan hoveres individuelt */
-    transition: text-decoration 0.3s ease; /* Gør hover-effekten glat */
+  display: inline-block; /* Sørger for at hver linje kan hoveres individuelt */
+  transition: text-decoration 0.3s ease; /* Gør hover-effekten glat */
 }
 
 .footer-box p span:hover {
-    text-decoration: underline;  /* Understreger linjen ved hover */
+  text-decoration: underline; /* Understreger linjen ved hover */
 }
 
 .footer-image {
-    width: 50%;
-    max-width: 200px; 
-    height: auto; /* Bevarer proportionerne på billedet */
-    margin-top: 20px;
+  width: 50%;
+  max-width: 200px;
+  height: auto; /* Bevarer proportionerne på billedet */
+  margin-top: 20px;
 }
 
 /* Responsiv design - når skærmbredden er mindre end 768px */
 @media screen and (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;  /* Stabler kolonnerne vertikalt */
-    }
-
-   
-    
-
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stabler kolonnerne vertikalt */
+  }
 }
