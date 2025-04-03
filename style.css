@@ -309,40 +309,39 @@ button:hover {
 /* Styling af sektion 2 - Hold dig opdateret */
 .opdateret {
   background-color: #a00000;
-  padding: 40px 10%;
-  text-align: center;
+  padding: 5px 10%;
+  text-align: right;
 }
 
 .opdateret-content {
   display: flex;
-  align-items: center; /* Centrerer indholdet vertikalt */
-  justify-content: center; /* Centrerer indholdet horisontalt */
-  gap: 20px; /* Afstand mellem logo og tekst */
+  align-items: center;
+  justify-content: center;
+  gap: 490px;
 }
 
 /* Ændrer logoets størrelse i forhold til skærmens bredde */
 .ikon-img {
-    width: 15vw; /* Logoet fylder 10% af skærmens bredde */
+    width: 20vw; 
     height: auto;
-  width: 10vw; /* Logoet fylder 10% af skærmens bredde */
-  height: auto;
-}
+ }
 
 .text-container {
   flex: 2; /* Teksten tager to gange så meget plads som logoet */
-  text-align: left; /* Sørger for, at teksten er venstrestillet */
-}
+  text-align: left; 
+  font-weight: 200;
+  }
 
 .text-container h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
-  color: #b11116;
+  color: #ffffff;
 }
 
 .text-container p {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.2;
-  color: #b11116;
+  color: #ffffff;
 }
 
 /* Styling for knappen i sektionen 'Hold dig opdateret' */
