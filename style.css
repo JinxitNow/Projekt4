@@ -96,6 +96,30 @@ button {
   border-radius: 0px;
 }
 
+/* Styling for sproglinks i header*/
+.lang-switch {
+  font-size: 12px;
+  font-weight: 200;
+  color: #333;
+  display: inline-block;
+}
+
+/* Sproglinks-farve, aktiv */
+.lang-switch .active {
+  color: #7d0f02;
+}
+
+/* Sproglinks-farve, ikke-aktiv*/
+.lang-switch span {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.lang-switch span:hover {
+  color: #7d0f02; /* Skift farven på sproget, når du holder musen over det */
+}
+
+
 
 /* Hero-sektionen */
 .hero {
