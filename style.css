@@ -321,8 +321,8 @@ button:hover {
 }
 
 /* Ændrer logoets størrelse i forhold til skærmens bredde */
-.ikon-img {
-    width: 20vw; 
+.opdateret-content .ikon-img {
+    width: 5vw; 
     height: auto;
  }
 
@@ -347,25 +347,18 @@ button:hover {
 /* Styling for knappen i sektionen 'Hold dig opdateret' */
 .opdateret .btn-container {
   display: flex;
-  justify-content: flex-end; /* Skubber knappen til højre */
-  width: 100%; /* Sørger for, at containeren fylder hele bredden */
+  width: 100%; 
 }
 
 /* Tilmeld-knappen i opdateret-sektionen */
 .btn-tilmeld {
-  background-color: #ff3b30; /* Juster baggrundsfarve for Tilmeld-knappen */
-  color: white; /* Juster tekstfarven */
-  padding: 10px 20px; /* Juster padding (afstand) rundt om knappen */
-  border-radius: 0px; /* Juster kanterne på knappen */
-  text-decoration: none; /* Fjern understregning */
-  font-size: 16px; /* Juster skriftstørrelse */
-  transition: background-color 0.3s ease; /* Tilføj en smooth overgang ved hover */
-  position: relative;
-  right: 230px; /* Brug højre værdi for at skubbe knappen til højre */
-}
-
-.btn-tilmeld:hover {
-  background-color: #e68900; /* Skift baggrundsfarve ved hover */
+  background-color: #a00000;
+  color: white;  /* Hvid tekst */
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 0px;
 }
 
 footer {
@@ -380,13 +373,10 @@ footer {
 /* Grid layout for footer-sektionen */
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(
-    4,
-    1fr
-  ); /* Opretter 4 kolonner med lige bredde */
+  grid-template-columns: repeat(4, 1fr ); /* Opretter 4 kolonner med lige bredde */
   gap: 20px; /* Afstand mellem kolonnerne */
-  margin-bottom: 20px; /* Lidt afstand under grid'en */
-  padding: 0 20px; /* Lidt padding på siderne */
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
 
 /* Styling af hver kolonne i footeren */
