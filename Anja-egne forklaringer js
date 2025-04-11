@@ -1,0 +1,42 @@
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-image');
+const totalImages = images.length;
+const imagesPerPage = 4; // Vi viser 4 billeder ad gangen
+
+// Funktion til at opdatere karousellen og vise de korrekte billeder
+function updateCarousel() {
+    const offset = -currentIndex * (100 / imagesPerPage);
+    document.querySelector('.carousel').style.transition = "transform 0.5s ease"; // Glidende overgang
+    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+}
+
+// Funktion til at vise næste gruppe billeder
+function nextImage() {
+    // Hvis vi er nået til slutningen, start forfra
+    if (currentIndex < Math.ceil(totalImages / imagesPerPage) - 1) {
+        currentIndex++;
+    } else {
+        currentIndex = 0; // Når vi når slutningen, gå tilbage til første billede
+    }
+    updateCarousel();
+}
+
+// Funktion til at vise forrige gruppe billeder
+function previousImage() {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = Math.floor(totalImages / imagesPerPage) - 1; // Hvis vi er på første gruppe, hop til sidste
+    }
+    updateCarousel();
+}
+
+// Event listeners for knapperne
+document.querySelector('.previous').addEventListener('click', previousImage);
+document.querySelector('.next').addEventListener('click', nextImage);
+
+// Start automatisk skift af billeder hvert 5. sekund
+setInterval(nextImage, 5000); // Skift billede hver 5. sekund
+
+// Initialiser karousellen ved at vise første billede
+updateCarousel();
