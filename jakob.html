@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Støt dyrene - Donation Form</title>
+    <link rel="stylesheet" href="styles-jakob.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="donation-form">
+        <div class="form-header">
+          <h1>Støt dyrene</h1>
+          <p>
+            Når du støtter Dyrenes Beskyttelse, er du med til at kæmpe for at
+            hvert dyr har en værdi i sig selv uafhængigt af den værdi, som dyret
+            har for mennesker. Dyrenes Beskyttelse arbejder for det gode dyreliv
+            for alle dyr
+          </p>
+        </div>
+
+        <div class="form-content">
+          <div class="form-group">
+            <label class="form-label">Betalingstype</label>
+            <div class="payment-options">
+              <div class="payment-option" data-group="payment-type">
+                <div class="radio-btn selected">
+                  <div class="radio-icon"></div>
+                </div>
+                <div class="option-label">Månedlig støtte</div>
+              </div>
+              <div class="payment-option" data-group="payment-type">
+                <div class="radio-btn">
+                  <div class="check-icon"></div>
+                </div>
+                <div class="option-label">Engangs donation</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Beløb</label>
+            <div class="amount-selection">
+              <div class="amount-options">
+                <div class="amount-option" data-group="amount">
+                  <div class="radio-btn selected">
+                    <div class="radio-icon"></div>
+                  </div>
+                  <div class="option-label">25 DKK</div>
+                </div>
+                <div class="amount-option" data-group="amount">
+                  <div class="radio-btn">
+                    <div class="check-icon"></div>
+                  </div>
+                  <div class="option-label">50 DKK</div>
+                </div>
+                <div class="amount-option" data-group="amount">
+                  <div class="radio-btn">
+                    <div class="check-icon"></div>
+                  </div>
+                  <div class="option-label">75 DKK</div>
+                </div>
+                <div class="amount-option" data-group="amount">
+                  <div class="radio-btn">
+                    <div class="check-icon"></div>
+                  </div>
+                  <div class="option-label">100 DKK</div>
+                </div>
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Andet beløb" />
+                <div class="input-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="user-details">
+            <div class="user-details-row">
+              <div class="form-group half-width">
+                <label class="form-label" for="firstname">Fornavn</label>
+                <div class="input-field">
+                  <input type="text" id="firstname" name="firstname" required />
+                </div>
+              </div>
+              <div class="form-group half-width">
+                <label class="form-label" for="lastname">Efternavn</label>
+                <div class="input-field">
+                  <input type="text" id="lastname" name="lastname" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="user-details-row">
+              <div class="form-group half-width">
+                <label class="form-label" for="phone">Telefon</label>
+                <div class="input-field">
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+              <div class="form-group half-width">
+                <label class="form-label" for="email">Email</label>
+                <div class="input-field">
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Betal med</label>
+            <div class="payment-methods">
+              <div class="payment-method">
+                <div class="payment-method-option">
+                  <div class="radio-btn selected" data-group="payment-method">
+                    <div class="radio-icon"></div>
+                  </div>
+                  <div class="option-label">Mobilepay</div>
+                </div>
+                <div class="payment-icon">
+                  <img src="https://placehold.co/40x25" alt="Mobilepay" />
+                </div>
+              </div>
+
+              <div class="payment-method">
+                <div class="payment-method-option">
+                  <div class="radio-btn" data-group="payment-method">
+                    <div class="check-icon"></div>
+                  </div>
+                  <div class="option-label">Betalingsservice</div>
+                </div>
+                <div class="payment-icon">
+                  <img
+                    src="https://placehold.co/40x25"
+                    alt="Betalingsservice"
+                  />
+                </div>
+              </div>
+
+              <div class="payment-method">
+                <div class="payment-method-option">
+                  <div class="radio-btn" data-group="payment-method">
+                    <div class="check-icon"></div>
+                  </div>
+                  <div class="option-label">Betalingskort</div>
+                </div>
+                <div class="payment-cards">
+                  <div class="payment-card">
+                    <img src="https://placehold.co/40x25" alt="Dankort" />
+                  </div>
+                  <div class="payment-card">
+                    <img src="https://placehold.co/40x25" alt="Visa" />
+                  </div>
+                  <div class="payment-card">
+                    <img src="https://placehold.co/40x25" alt="Mastercard" />
+                  </div>
+                  <div class="payment-card">
+                    <img
+                      src="https://placehold.co/40x25"
+                      alt="Forbrugsforeningen"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkboxes">
+            <div class="checkbox-option">
+              <div class="checkbox selected">
+                <div class="checkbox-icon"></div>
+              </div>
+              <div class="option-label">Tilmeld dig vores nyhedsbrev</div>
+            </div>
+            <div class="checkbox-option">
+              <div class="checkbox">
+                <div class="check-icon"></div>
+              </div>
+              <div class="option-label">Ja tak, jeg ønsker skattefradrag</div>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <button class="submit-btn">STØT</button>
+            <p class="terms">
+              Når du udfylder denne formular, siger du samtidig ja til vores
+              betingelser. Læs vores datapolitik her.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script-jakob.js"></script>
+  </body>
+</html>

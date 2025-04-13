@@ -1,0 +1,347 @@
+:root {
+  --Biege: #f5f0e6;
+  --White: white;
+  --Grey: #aaaaaa;
+  --Dark-grey: #333333;
+  --Darkest-grey: #141414;
+  --Light-Red: #a00000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Roboto, sans-serif;
+  color: var(--Dark-grey);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 64px 164px;
+  background: var(--Biege);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.donation-form {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.form-header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form-header h1 {
+  align-self: stretch;
+  color: var(--Darkest-grey);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.form-header p {
+  align-self: stretch;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.form-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form-label {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--Dark-grey);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.payment-options,
+.amount-options {
+  width: 624px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.payment-option,
+.amount-option {
+  flex: 1 1 0;
+  height: 21px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.radio-btn {
+  width: 25px;
+  height: 25px;
+  background: var(--White);
+  overflow: hidden;
+  border-radius: 999px;
+  outline: 1px var(--Grey) solid;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.radio-icon {
+  width: 12.69px;
+  height: 9.84px;
+  position: relative;
+  background: var(--Light-Red);
+  border-radius: 50%;
+}
+
+.check-icon {
+  width: 11.88px;
+  height: 9.1px;
+  position: relative;
+  background: var(--Light-Red);
+}
+
+.option-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--Dark-grey);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.amount-selection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.input-field {
+  align-self: stretch;
+  height: 38px;
+  background: var(--White);
+  border-radius: 4px;
+  outline: 1px var(--Grey) solid;
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.input-field input {
+  width: 100%;
+  height: 100%;
+  padding: 7px 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--Dark-grey);
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.input-field input::placeholder {
+  color: #666666;
+}
+
+/* Focus state styling */
+.input-field:focus-within {
+  outline-color: var(--Light-Red);
+  outline-width: 2px;
+}
+
+.user-details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.user-details-row {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.half-width {
+  flex: 1 1 0;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.payment-methods {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.payment-method {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-method-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.payment-icon,
+.payment-card {
+  width: 40px;
+  height: 25px;
+  position: relative;
+}
+
+.payment-icon img,
+.payment-card img {
+  width: 40px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.payment-cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkbox-option {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  background: var(--White);
+  overflow: hidden;
+  border-radius: 4px;
+  outline: 1px var(--Grey) solid;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox-icon {
+  width: 12.69px;
+  height: 9.84px;
+  position: relative;
+  background: var(--Light-Red);
+}
+
+.form-footer {
+  width: 624px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.submit-btn {
+  padding: 3px 20px;
+  background: var(--Light-Red);
+  border: none;
+  color: var(--Biege);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.terms {
+  align-self: stretch;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.selected .radio-icon,
+.selected .checkbox-icon {
+  display: block;
+}
+
+.radio-btn:not(.selected) .radio-icon,
+.checkbox:not(.selected) .checkbox-icon,
+.radio-btn:not(.selected) .check-icon,
+.checkbox:not(.selected) .check-icon {
+  display: none;
+}
