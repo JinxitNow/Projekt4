@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lær om dyr</title>
+    <link rel="stylesheet" href="sandra.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Ekstra kærlighed til vores kaniner</h1>
+  <div class="card-container" id="card-container"></div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="lukModal()">&times;</span>
+      <h2 id="navn"></h2>
+      <p id="info-icons"></p>
+      <p id="beskrivelse"></p>
+      <p id="ekstra"></p>
+      <button onclick="givGodbid()" id="doner-btn"></button>
+      <p class="link">Lær mere om adoption &rarr;</p>
+      <div class="billeder">
+        <img src="Images/kanin1-sandra.png" id="img1" alt="Kaninen Eukalyptus">
+        <img src="Images/kanin2-sandra.png" id="img2" alt="Kaninen Eukalyptus der leger">
+      </div>
+    </div>
+  </div>
+    
+    <script src="script-sandra.js"></script>
+</body>
+</html>
