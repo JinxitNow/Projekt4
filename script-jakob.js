@@ -1,4 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const openModalBtn = document.getElementById("openModalBtn");
+  const closeModalBtn = document.getElementById("closeModalBtn");
+  const modalOverlay = document.getElementById("modalOverlay");
+
+  function openModal() {
+    modalOverlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modalOverlay.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  openModalBtn.addEventListener("click", openModal);
+  closeModalBtn.addEventListener("click", closeModal);
+
+  modalOverlay.addEventListener("click", function (event) {
+    if (event.target === modalOverlay) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modalOverlay.style.display === "flex") {
+      closeModal();
+    }
+  });
+
   const radioGroups = {
     "payment-type": document.querySelectorAll(".payment-option"),
     amount: document.querySelectorAll(".amount-option"),
@@ -56,7 +85,56 @@ document.addEventListener("DOMContentLoaded", function () {
   submitButton.addEventListener("click", function (e) {
     e.preventDefault();
 
-    alert("Tak for din støtte!");
+    const requiredFields = [
+      document.getElementById("firstname"),
+      document.getElementById("lastname"),
+      document.getElementById("phone"),
+      document.getElementById("email"),
+    ];
+
+    let isValid = true;
+
+    requiredFields.forEach((field) => {
+      if (!field.value.trim()) {
+        isValid = false;
+        highlightInvalidField(field);
+      } else {
+        removeHighlight(field);
+      }
+    });
+
+    const emailField = document.getElementById("email");
+    if (emailField.value.trim() && !isValidEmail(emailField.value)) {
+      isValid = false;
+      highlightInvalidField(emailField);
+    }
+
+    if (isValid) {
+      alert("Tak for din støtte!");
+      closeModal();
+    }
+  });
+
+  function highlightInvalidField(field) {
+    const inputFieldContainer = field.closest(".input-field");
+    inputFieldContainer.classList.add("invalid");
+  }
+
+  function removeHighlight(field) {
+    const inputFieldContainer = field.closest(".input-field");
+    inputFieldContainer.classList.remove("invalid");
+  }
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  const allInputFields = document.querySelectorAll(".input-field input");
+  allInputFields.forEach((input) => {
+    input.addEventListener("input", function () {
+      removeHighlight(this);
+    });
   });
 });
 
