@@ -6,7 +6,7 @@ const dyr = [
       art: "Dværgkanin Blanding",
       beskrivelse: "Mød Eukalyptus – den nuttede og energiske lille spirrevip! 🐰❤️\n\nEfter en svær start i livet søger Eukalyptus nu et kærligt hjem. Han er fuld af energi, nysgerrig og elsker at spæne rundt. Selvom han har mistet lidt tillid til mennesker, vil han blomstre med omsorg og tålmodighed.",
       ekstra: "✨ Neutraliseret, vaccineret, chippet og sundhedstjekket.\n🏡 Trives bedst som frikanin med masser af plads.",
-      billeder: ["kanin1.jpg", "kanin2.jpg"]
+      billeder: ["Images/kanin1-sandra.png", "Images/kanin2-sandra.png"]
     }
   ];
 
