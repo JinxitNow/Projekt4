@@ -41,21 +41,21 @@ $(document).ready(function () {
       i++;
       if (i >= messages.length) i = 0;
     }, 5000);
+  });
 
-    $('#closeBtn').on('click', function () {
-      $('#confirmationModal').addClass('hidden');
-      if (interval !== null) {
-        clearInterval(interval);
-        interval = null;
-      }
-    });
+  $('#closeBtn').on('click', function () {
+    $('#confirmationModal').addClass('hidden');
+    if (interval !== null) {
+      clearInterval(interval);
+      interval = null;
+    }
+  });
 
-    $('#copyBtn').on('click', function () {
-      const link = document.getElementById("shareLink");
-      link.select();
-      link.setSelectionRange(0, 99999);
-      document.execCommand("copy");
-      alert("Link kopieret!");
-    });
+  $('#copyBtn').on('click', function () {
+    const link = document.getElementById("shareLink");
+    link.select();
+    link.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Link kopieret!");
   });
 });
