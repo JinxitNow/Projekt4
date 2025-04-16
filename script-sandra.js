@@ -32,10 +32,17 @@ const dyr = [
     document.getElementById("img2").src = kanin.billeder[1];
     document.getElementById("doner-btn").innerText = `GIV ${kanin.navn} FREDAGSSLIK`;
     document.getElementById("modal").style.display = "block";
+
+    const modal = document.getElementById("modal");
+    modal.style.display = "flex";
+
+    document.body.style.overflow = "hidden";
   }
 
   function lukModal() {
     document.getElementById("modal").style.display = "none";
+
+    document.body.style.overflow = "auto";
   }
 
   function givGodbid() {
