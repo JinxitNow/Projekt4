@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Modal functionality
+  // Modal
   const openModalBtns = document.querySelectorAll(".openModalBtn");
   const closeModalBtn = document.getElementById("closeModalBtn");
   const modalOverlay = document.getElementById("modalOverlay");
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.overflow = "auto";
   }
 
-  // Add event listeners to all buttons with openModalBtn class
   openModalBtns.forEach((btn) => {
     btn.addEventListener("click", openModal);
   });
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Form radio buttons functionality
   const radioGroups = {
     "payment-type": document.querySelectorAll(".payment-option"),
     amount: document.querySelectorAll(".amount-option"),
@@ -69,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Checkbox functionality
   const checkboxOptions = document.querySelectorAll(".checkbox-option");
   checkboxOptions.forEach((option) => {
     option.addEventListener("click", function () {
@@ -78,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Custom amount field functionality
   const customAmountField = document.querySelector(".input-field input");
   customAmountField.addEventListener("focus", function () {
     const amountOptions = document.querySelectorAll(
@@ -89,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Form validation
   const submitButton = document.querySelector(".submit-btn");
   submitButton.addEventListener("click", function (e) {
     e.preventDefault();
@@ -139,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return emailRegex.test(email);
   }
 
-  // Input field validation handling
   const allInputFields = document.querySelectorAll(".input-field input");
   allInputFields.forEach((input) => {
     input.addEventListener("input", function () {
@@ -147,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Amount input validation
   const numberInput = document.querySelector(".input-field input");
   numberInput.addEventListener("input", function (e) {
     this.value = this.value.replace(/[^\d]/g, "");
@@ -159,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Name input validation
   const firstNameInput = document.getElementById("firstname");
   const lastNameInput = document.getElementById("lastname");
 
@@ -181,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function () {
   restrictToLetters(firstNameInput);
   restrictToLetters(lastNameInput);
 
-  // Phone input validation
   const phoneInput = document.getElementById("phone");
   phoneInput.addEventListener("input", function () {
     this.value = this.value.replace(/\D/g, "").slice(0, 8);

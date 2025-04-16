@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-content">
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <!-- Animal Grid Section -->
+    <!-- Animal grid -->
     <section class="animal-section">
       <div class="container">
         <div class="header">
@@ -249,7 +249,7 @@
       </div>
     </section>
 
-    <!-- How-To Section -->
+    <!-- How to-->
     <section class="how-to">
       <div class="container how-to-container">
         <div class="header-section">
@@ -382,7 +382,11 @@
                   </div>
                 </div>
                 <div class="input-field">
-                  <input type="text" placeholder="Andet beløb" />
+                  <input
+                    type="text"
+                    placeholder="Andet beløb"
+                    id="customAmount"
+                  />
                   <div class="input-icon"></div>
                 </div>
               </div>
@@ -507,7 +511,7 @@
             </div>
 
             <div class="form-footer">
-              <button class="submit-btn">STØT</button>
+              <button class="submit-btn" id="submitDonation">STØT</button>
               <p class="terms">
                 Når du udfylder denne formular, siger du samtidig ja til vores
                 betingelser. Læs vores datapolitik her.
@@ -515,6 +519,64 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="confirmation-modal hidden">
+      <div class="modal-content">
+        <h2>Tak for din støtte!</h2>
+        <p id="confirmationText"></p>
+        <p class="intro-text">
+          Når du støtter Dyrenes Beskyttelse, er du med til at kæmpe for at
+          hvert dyr har en værdi i sig selv uafhængigt af den værdi, som dyret
+          har for mennesker. Dyrenes Beskyttelse arbejder for det gode dyreliv
+          for alle dyr.
+        </p>
+
+        <div class="info-box">
+          <div class="info-row">
+            <span>Betalingstype</span><span id="type">Månedlig støtte</span>
+          </div>
+          <div class="info-row">
+            <span>Beløb</span><span id="amount">25 DKK</span>
+          </div>
+          <div class="info-row">
+            <span>Person</span><span id="person">Fornavn + Efternavn</span>
+          </div>
+          <div class="info-row">
+            <span>Telefon</span><span id="phone-confirmation">Nummer</span>
+          </div>
+          <div class="info-row">
+            <span>Email</span><span id="email-confirmation">Email</span>
+          </div>
+          <div class="info-row">
+            <span>Betalt med</span><span id="paid">MobilePay</span>
+          </div>
+        </div>
+
+        <h3>Spred budskabet med dine bekendte</h3>
+        <p>Kopier nedenstående link eller del via sociale medier.</p>
+
+        <div class="link-box">
+          <input
+            type="text"
+            readonly
+            value="www.dyrenesbeskyttelse.dk/fredagsslik"
+            id="shareLink"
+          />
+          <button id="copyBtn">📋</button>
+        </div>
+
+        <div class="iconshl">
+          <img src="img/facebook.png" alt="Facebook" />
+          <img src="img/instagram.webp" alt="Instagram" />
+          <img src="img/snapchat.png" alt="Snapchat" />
+          <img src="img/tiktok.png" alt="TikTok" />
+          <img src="img/whatsapp.png" alt="Whatsapp" />
+        </div>
+
+        <button id="closeBtn">LUK</button>
       </div>
     </div>
 

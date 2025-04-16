@@ -1,5 +1,5 @@
 :root {
-  /* Combining all variables and standardizing naming */
+  /* Variables */
   --biege: #f5f0e6;
   --white: #ffffff;
   --grey: #aaaaaa;
@@ -23,7 +23,7 @@ body {
   min-height: 100vh;
 }
 
-/* Container Styles */
+/* Container*/
 .container {
   width: 100%;
   max-width: 1440px;
@@ -35,7 +35,7 @@ body {
   gap: 40px;
 }
 
-/* Shared Styles */
+/*  Universal */
 .header-section,
 .header {
   width: 100%;
@@ -131,7 +131,7 @@ h1 {
   cursor: pointer;
 }
 
-/* HERO SECTION */
+/* Hero */
 .hero {
   background: var(--biege);
 }
@@ -169,7 +169,7 @@ h1 {
   gap: 16px;
 }
 
-/* Social Feed Section */
+/* Social media feed */
 .social-feed {
   display: inline-flex;
   justify-content: flex-start;
@@ -192,7 +192,7 @@ h1 {
   object-fit: cover;
 }
 
-/* ANIMAL GRID SECTION */
+/* Animal grid */
 .animal-section {
   background: var(--white);
 }
@@ -277,7 +277,7 @@ h1 {
   display: none;
 }
 
-/* HOW-TO SECTION */
+/* How to section*/
 .how-to {
   background: var(--bright-orange);
 }
@@ -345,7 +345,7 @@ h1 {
   line-height: 1.5;
 }
 
-/* Modal Styles */
+/* Modals*/
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -391,7 +391,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styles */
+/* Form */
 .donation-form {
   width: 100%;
   max-width: 631px;
@@ -519,7 +519,6 @@ h1 {
   outline-width: 2px;
 }
 
-/* Radio and Checkbox Styles */
 .radio-btn {
   width: 25px;
   height: 25px;
@@ -635,7 +634,6 @@ h1 {
   outline-offset: 1px;
 }
 
-/* User Details Section */
 .amount-selection {
   align-self: stretch;
   display: flex;
@@ -671,7 +669,6 @@ h1 {
   gap: 8px;
 }
 
-/* Payment Methods */
 .payment-methods {
   align-self: stretch;
   display: flex;
@@ -736,7 +733,6 @@ h1 {
   cursor: pointer;
 }
 
-/* Form Footer */
 .form-footer {
   width: 100%;
   display: flex;
@@ -753,7 +749,133 @@ h1 {
   line-height: 21px;
 }
 
-/* RESPONSIVE STYLES */
+/* Confirmation Modal */
+.hidden {
+  display: none !important;
+}
+
+#confirmationModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--biege);
+  padding: 24px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  color: var(--darkest-grey);
+}
+
+#confirmationText {
+  font-size: 14px;
+  color: var(--light-red);
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  color: var(--darkest-grey);
+  margin-bottom: 5px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  color: var(--dark-grey);
+}
+
+.intro-text {
+  margin-bottom: 32px;
+}
+
+.info-box {
+  background: #f0ebe1;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  font-size: 14px;
+}
+
+.info-row span:first-child {
+  color: var(--darkest-grey);
+  font-weight: bold;
+}
+
+.info-row span:last-child {
+  width: 45%;
+  color: var(--dark-grey);
+}
+
+.link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 16px;
+  background: #f0ebe1;
+  border-radius: 12px;
+}
+
+#shareLink {
+  border: none;
+  padding: 15px;
+  flex-grow: 1;
+  font-size: 14.4px;
+  font-weight: bold;
+  color: var(--darkest-grey);
+  background-color: #f0ebe1;
+}
+
+#copyBtn {
+  background: #f0ebe1;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.iconshl img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+#closeBtn {
+  margin-top: 32px;
+  background: var(--light-red);
+  color: var(--biege);
+  border: none;
+  padding: 11px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#closeBtn:hover {
+  background: var(--biege);
+  color: var(--light-red);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 @media (max-width: 1600px) {
   .social-feed {
     flex-wrap: wrap;
@@ -875,6 +997,20 @@ h1 {
   .half-width {
     width: 100%;
   }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .info-row span:last-child {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -884,6 +1020,20 @@ h1 {
 
   .how-to .header-section {
     margin-bottom: 40px;
+  }
+
+  .link-box {
+    flex-direction: column;
+  }
+
+  #shareLink {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #copyBtn {
+    width: 100%;
+    padding: 12px;
   }
 }
 
