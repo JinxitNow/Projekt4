@@ -1,0 +1,279 @@
+/* Farver og styles baseret på Dyrenes Beskyttelse */
+:root {
+    --primary-color: #f5f0e6; /* Baggrundsfarve */
+    --secondary-color: #7d0f02; /*secondary color*/
+    --highlight-color: #ff3b30; /* CTA-farve */
+    --btn-text-color: #ffffff;
+    --font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Styling af logoet i headeren */
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  /* Styling af billedet inde i logo containeren */
+  .logo img {
+    max-width: 170px;
+    height: auto;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: -110px;
+  }
+  
+  nav ul li {
+    font-weight: 200;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* Styling af knappen "Støt" */
+  .nav-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Styling af knappen "støt" */
+  button {
+    background-color: #ff3b30;
+    color: black; 
+    font-size: 28px;
+    padding: 15px 30px;
+    border: none;
+    position: absolute;
+    right: 300px;
+    top: 5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 0px;
+  }
+  
+  /* Styling for sproglinks i header*/
+  .lang-switch {
+    font-size: 12px;
+    font-weight: 200;
+    color: #333;
+    display: inline-block;
+  }
+  
+  /* Sproglinks-farve, aktiv */
+  .lang-switch .active {
+    color: #7d0f02;
+  }
+  
+  /* Sproglinks-farve, ikke-aktiv*/
+  .lang-switch span {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .lang-switch span:hover {
+    color: #7d0f02; /* Skift farven på sproget, når du holder musen over det */
+  }
+  
+  
+  /* Hero-sektionen */
+  .hero {
+    display: flex;
+    flex-direction: column; /* Gør så indholdet bliver stablet lodret */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    background-color: #f5f0e6;
+    color: #000000;
+    padding: 30px 10%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Hero-text sektionen */
+  .hero-text {
+    width: 50%; /* Fylder hele bredden */
+    margin-top: 20px;
+    margin-bottom: -40px;
+    padding: 20px;
+  }
+  
+  /* Styling af knapperne "giv slik og del" */
+  .btn-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling af knappen "Støt" */
+  #stot-knap {
+    background-color: #ff3b30;
+    color: black;
+    font-size: 16px;
+    font-weight:bold;
+    padding: 15px 30px;
+    border: none;
+    position: absolute;
+    right: 300px;
+    top: 5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 0px;
+  }
+  
+  /* Styling af knappen "Giv fredagsslik til dyrene" */
+  #giv-fredagsslik {
+    background-color: #7d0f02;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  /* Hover-effekt på knappen "Giv fredagsslik til dyrene" */
+  #giv-fredagsslik:hover {
+    background-color: #ff3b30;
+  }
+  
+  /* Styling af knappen "Del #Givdyrenefredagsslik" */
+  #del-givdyrenefredagsslik {
+    background-color: var(--primary-color);
+    color: #000000;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    border: 2px solid #000000;
+  }
+  
+  /* Hover-effekt på knappen "Del #Givdyrenefredagsslik" */
+  #del-givdyrenefredagsslik:hover {
+    background-color: #d93025;
+    border: 2px solid #d93025;
+  }
+
+  
+
+
+/* Styling af billedgalleri container */
+.image-carousel {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 23px;
+  margin-right: 26px;
+}
+
+.carousel-container {
+    display: flex; /* Brug flexbox til at arrangere billederne horisontalt */
+    overflow: hidden; /* Skjul billeder, der er uden for containeren */
+    width: 100%; /* Sørg for, at containeren fylder hele bredden */
+}
+
+.carousel {
+    display: flex; /* Vis billederne i én række */
+    transition: transform 0.5s ease; /* Giv en blød overgang, når billederne skifter */
+}
+
+.carousel-image {
+    width: 25%; /* Hvert billede fylder 25% af containerens bredde (4 billeder) */
+    object-fit: cover; /* Sørg for at billederne fylder pladsen korrekt */
+}
+
+
+/* Styling af kontrolknapperne */
+.carousel-controls {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Fælles styling for begge knapper */
+button {
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
+  background-color: #7d0f02;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+}
+
+/* Styling for venstre knap */
+.previous {
+  position: flex;
+  left: 46%;
+  padding-left: 20px;
+  background-color: #7d0f02;
+}
+
+/* Styling for højre knap */
+.next {
+  position: flex;
+  right: 46%;
+  padding-right: 20px;
+  background-color: #7d0f02;
+}
+
+/* Styling af hover effekt */
+button:hover {
+  background-color: #ff5733;
+}
+
