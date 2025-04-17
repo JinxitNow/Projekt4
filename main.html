@@ -15,6 +15,34 @@
     />
   </head>
   <body>
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <div class="nav-left">
+          <div class="dropdown">
+            <a href="#">DYR I NØD</a>
+            <div class="dropdown-content">
+              <a href="#">HJALP ET DYR</a>
+              <a href="#">INDRAPPORTÉR</a>
+              <a href="#">AKUT NØD</a>
+            </div>
+          </div>
+          <a href="#">ADOPTION</a>
+          <a href="#">VI KÆMPER FOR</a>
+          <a href="#">BLIV MEDLEM</a>
+          <a href="#">BLIV FRIVILLIG</a>
+        </div>
+
+        <a href="#" class="logo">DYRENES<br />BESKYTTELSE</a>
+
+        <div class="nav-right">
+          <button class="search-btn" aria-label="Søg">🔍</button>
+          <a href="#" class="support-btn">STØT</a>
+          <div class="lang-switch"><strong>DK</strong> / EN</div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+      </nav>
+    </header>
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-container">
@@ -48,34 +76,57 @@
             </button>
           </div>
         </div>
-        <div class="social-feed">
-          <div class="social-card instagram-card">
-            <img
-              src="https://placehold.co/400x568"
-              alt="Instagram post om #DyrenesFredagsslik"
-              class="card-image"
-            />
+
+        <!-- Image carousel - Anja -->
+        <div class="image-carousel">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="images/hund1.webp" alt="hund1" class="carousel-image" />
+              <img src="images/kat1.webp" alt="kat1" class="carousel-image" />
+              <img
+                src="images/undulat.webp"
+                alt="undulat"
+                class="carousel-image"
+              />
+              <img src="images/hund2.webp" alt="hund2" class="carousel-image" />
+              <img src="images/kat2.webp" alt="kat2" class="carousel-image" />
+              <img
+                src="images/marsvin1.webp"
+                alt="marsvin1"
+                class="carousel-image"
+              />
+              <img src="images/hund3.webp" alt="hund3" class="carousel-image" />
+              <img
+                src="images/kanin1.webp"
+                alt="kanin1"
+                class="carousel-image"
+              />
+              <img src="images/kat3.webp" alt="kat3" class="carousel-image" />
+              <img
+                src="images/papegoeje1.webp"
+                alt="papegoeje1"
+                class="carousel-image"
+              />
+              <img src="images/hund4.webp" alt="hund4" class="carousel-image" />
+              <img
+                src="images/marsvin2.webp"
+                alt="marsvin2"
+                class="carousel-image"
+              />
+              <img src="images/hund5.webp" alt="hund5" class="carousel-image" />
+              <img src="images/kat4.webp" alt="kat4" class="carousel-image" />
+              <img
+                src="images/undulater.webp"
+                alt="undulater"
+                class="carousel-image"
+              />
+              <img src="images/kat5.webp" alt="kat5" class="carousel-image" />
+            </div>
           </div>
-          <div class="social-card facebook-card">
-            <img
-              src="https://placehold.co/400x568"
-              alt="Facebook post om #DyrenesFredagsslik"
-              class="card-image"
-            />
-          </div>
-          <div class="social-card instagram-card">
-            <img
-              src="https://placehold.co/400x568"
-              alt="Instagram post om #DyrenesFredagsslik"
-              class="card-image"
-            />
-          </div>
-          <div class="social-card tiktok-card">
-            <img
-              src="https://placehold.co/400x568"
-              alt="TikTok post om #DyrenesFredagsslik"
-              class="card-image"
-            />
+
+          <div class="carousel-controls">
+            <button class="previous" aria-label="Previous">&#10094;</button>
+            <button class="next" aria-label="Next">&#10095;</button>
           </div>
         </div>
       </div>
@@ -317,7 +368,7 @@
       </div>
     </section>
 
-    <!-- Donation Modal -->
+    <!-- Donation modal - Jakob -->
     <div id="modalOverlay" class="modal-overlay">
       <div class="modal-container">
         <button id="closeModalBtn" class="close-modal-btn">&times;</button>
@@ -522,7 +573,7 @@
       </div>
     </div>
 
-    <!-- Confirmation Modal -->
+    <!-- Confirmation Modal - Helena -->
     <div id="confirmationModal" class="confirmation-modal hidden">
       <div class="modal-content">
         <h2>Tak for din støtte!</h2>
@@ -579,7 +630,6 @@
         <button id="closeBtn">LUK</button>
       </div>
     </div>
-
     <script src="main.js"></script>
   </body>
 </html>

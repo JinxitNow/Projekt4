@@ -1,5 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Modal
+  // Header - Justine
+  function toggleMenu() {
+    const nav = document.getElementById("myTopnav");
+    nav.classList.toggle("responsive");
+
+    const menuItems = [
+      "DYR I NØD",
+      "ADOPTION",
+      "VI KÆMPER FOR",
+      "BLIV MEDLEM",
+      "BLIV FRIVILLIG",
+    ];
+    for (let i = 0; i < menuItems.length; i++) {
+      console.log("Menu punkt: " + menuItems[i]);
+    }
+  }
+  const dropdownLinks = document.querySelectorAll(".dropdown > a");
+  dropdownLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      document.querySelectorAll(".dropdown").forEach((drop) => {
+        if (drop !== link.parentElement) {
+          drop.classList.remove("open");
+        }
+      });
+
+      const dropdown = link.parentElement;
+      dropdown.classList.toggle("open");
+    });
+  });
+
+  window.toggleMenu = toggleMenu;
+
+  // Donation Modal - Jakob
   const openModalBtns = document.querySelectorAll(".openModalBtn");
   const closeModalBtn = document.getElementById("closeModalBtn");
   const modalOverlay = document.getElementById("modalOverlay");
@@ -114,8 +148,66 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (isValid) {
-      alert("Tak for din støtte!");
+      const fullName = `${document.getElementById("firstname").value} ${
+        document.getElementById("lastname").value
+      }`;
+      const amount =
+        document
+          .querySelector(".amount-option .radio-btn.selected")
+          ?.closest(".amount-option")
+          ?.querySelector(".option-label")?.textContent ||
+        document.querySelector(".input-field input").value + " DKK";
+      const paymentMethod =
+        document
+          .querySelector(".payment-method .radio-btn.selected")
+          ?.closest(".payment-method-option")
+          ?.querySelector(".option-label")?.textContent || "MobilePay";
+
+      document.getElementById("type").textContent = "Månedlig støtte";
+      document.getElementById("amount").textContent = amount;
+      document.getElementById("person").textContent = fullName;
+      document.getElementById("phone").textContent =
+        document.getElementById("phone").value;
+      document.getElementById("email").textContent =
+        document.getElementById("email").value;
+      document.getElementById("paid").textContent = paymentMethod;
+
+      const messages = [
+        "Tusind tak for din støtte!",
+        "Ses vi næste fredag?",
+        "Vi sætter stor pris på din donation!",
+        "Tak fordi du støtter vores internatvenner!",
+        "Så er der fredagsslik!",
+      ];
+
+      let i = 0;
+      document.getElementById("confirmationText").textContent = messages[i];
+      i++;
+
+      const interval = setInterval(function () {
+        document.getElementById("confirmationText").textContent = messages[i];
+        i++;
+        if (i >= messages.length) i = 0;
+      }, 5000);
+
+      // Show confirmation modal and hide donation modal
+      document.getElementById("confirmationModal").classList.remove("hidden");
       closeModal();
+
+      document
+        .getElementById("closeBtn")
+        .addEventListener("click", function () {
+          document.getElementById("confirmationModal").classList.add("hidden");
+          clearInterval(interval);
+        });
+
+      document.getElementById("copyBtn").addEventListener("click", function () {
+        const link = document.getElementById("shareLink");
+        link.select();
+        link.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        alert("Link kopieret!");
+      });
     }
   });
 
@@ -183,4 +275,56 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
     }
   });
+
+  // Image Carousel
+  let currentIndex = 0;
+  const images = document.querySelectorAll(".carousel-image");
+  const totalImages = images.length;
+  const imagesPerPage = 4;
+
+  for (let i = 0; i < totalImages; i++) {
+    console.log(images[i]);
+  }
+
+  function updateCarousel() {
+    const offset = -currentIndex * (100 / imagesPerPage);
+    document.querySelector(".carousel").style.transition =
+      "transform 0.5s ease";
+    document.querySelector(
+      ".carousel"
+    ).style.transform = `translateX(${offset}%)`;
+  }
+
+  function nextImage() {
+    if (currentIndex < Math.ceil(totalImages / imagesPerPage) - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateCarousel();
+  }
+
+  function previousImage() {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = Math.floor(totalImages / imagesPerPage) - 1;
+    }
+    updateCarousel();
+  }
+
+  const previousButton = document.querySelector(".previous");
+  const nextButton = document.querySelector(".next");
+
+  if (previousButton) {
+    previousButton.addEventListener("click", previousImage);
+  }
+
+  if (nextButton) {
+    nextButton.addEventListener("click", nextImage);
+  }
+
+  const carouselInterval = setInterval(nextImage, 5000);
+
+  updateCarousel();
 });
