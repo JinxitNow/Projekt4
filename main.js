@@ -190,7 +190,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (i >= messages.length) i = 0;
       }, 5000);
 
-      // Show confirmation modal and hide donation modal
       document.getElementById("confirmationModal").classList.remove("hidden");
       closeModal();
 
@@ -327,4 +326,207 @@ document.addEventListener("DOMContentLoaded", function () {
   const carouselInterval = setInterval(nextImage, 5000);
 
   updateCarousel();
+
+  // Animal Modal - Sandra
+  const animalData = [
+    {
+      navn: "EUKALYPTUS",
+      alder: "1 år",
+      køn: "Han",
+      art: "Dværgkanin Blanding",
+      beskrivelse:
+        "Mød Eukalyptus – den nuttede og energiske lille spirrevip! 🐰❤️\n\nEfter en svær start i livet søger Eukalyptus nu et kærligt hjem. Han er fuld af energi, nysgerrig og elsker at spæne rundt. Selvom han har mistet tillid til mennesker, vil han blomstre med omsorg og tålmodighed.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret, chippet og sundhedstjekket.\n🏡 Trives bedst som frikanin med masser af plads.",
+      billeder: ["Images/kanin1-sandra.png", "Images/kanin2-sandra.png"],
+    },
+    {
+      navn: "MATHILDE",
+      alder: "2 år",
+      køn: "Hun",
+      art: "Kat",
+      beskrivelse:
+        "Mathilde er en sød og rolig kat, der elsker at ligge i vindueskarmen og kigge ud på fuglene.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives bedst i et roligt hjem uden små børn.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "MIA",
+      alder: "3 år",
+      køn: "Hun",
+      art: "Kat",
+      beskrivelse:
+        "Mia er en aktiv og legesyg kat, der elsker at klatre og udforske nye steder.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives i et hjem med masser af aktivitet.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "NETE",
+      alder: "1 år",
+      køn: "Hun",
+      art: "Kat",
+      beskrivelse:
+        "Nete er en sky men kærlig kat, der har brug for tid til at vænne sig til nye mennesker.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives bedst i et roligt hjem med tålmodige ejere.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "ROMEO",
+      alder: "4 år",
+      køn: "Han",
+      art: "Hund",
+      beskrivelse:
+        "Romeo er en glad og energisk hund, der elsker lange gåture og at lege med bolde.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives i et aktivt hjem med adgang til have.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "SWEETIE",
+      alder: "2 år",
+      køn: "Hun",
+      art: "Marsvin",
+      beskrivelse:
+        "Sweetie er et socialt marsvin, der elsker at få grøntsager og blive kløet bag ørerne.",
+      ekstra: "✨ Sundhedstjekket.\n🏡 Trives bedst sammen med andre marsvin.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "COOKIE",
+      alder: "1 år",
+      køn: "Han",
+      art: "Undulat",
+      beskrivelse:
+        "Cookie er en farverig og livlig undulat, der kan fløjte små melodier.",
+      ekstra:
+        "✨ Sundhedstjekket.\n🏡 Trives bedst med daglig interaktion og stimulering.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "BELLATRIX",
+      alder: "3 år",
+      køn: "Hun",
+      art: "Kat",
+      beskrivelse:
+        "Bellatrix er en majestætisk sort kat med en stærk personlighed og et blødt hjerte.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives bedst som eneste kat i hjemmet.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "KIM",
+      alder: "5 år",
+      køn: "Han",
+      art: "Hund",
+      beskrivelse:
+        "Kim er en rolig og loyal hund, der elsker at ligge ved dine fødder og bare være sammen med dig.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives i et roligt hjem med rutiner.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+    {
+      navn: "ROLLO",
+      alder: "2 år",
+      køn: "Han",
+      art: "Kanin",
+      beskrivelse:
+        "Rollo er en nysgerrig og venlig kanin, der elsker at hoppe frit omkring og udforske.",
+      ekstra:
+        "✨ Neutraliseret, vaccineret og sundhedstjekket.\n🏡 Trives bedst med god plads til at bevæge sig.",
+      billeder: [
+        "https://placehold.co/368x400",
+        "https://placehold.co/368x400",
+      ],
+    },
+  ];
+
+  setupAnimalLinks();
+
+  function setupAnimalLinks() {
+    const animalLinks = document.querySelectorAll(".link-with-icon");
+
+    animalLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const animalCard = this.closest(".animal-card");
+        const animalNameElement = animalCard.querySelector(".animal-name");
+        const animalName = animalNameElement.textContent;
+
+        const animal = animalData.find(
+          (animal) => animal.navn === animalName.toUpperCase()
+        );
+
+        if (animal) {
+          showAnimalDetails(animal);
+        } else {
+          console.error(`Animal data not found for: ${animalName}`);
+        }
+      });
+    });
+  }
+
+  function showAnimalDetails(animal) {
+    document.getElementById("animalName").textContent = animal.navn;
+    document.getElementById("animalInfo").textContent = `🐾 ${animal.alder} • ${
+      animal.køn === "Han" ? "♂" : "♀"
+    } • 🐇 ${animal.art}`;
+    document.getElementById("animalDescription").textContent =
+      animal.beskrivelse;
+    document.getElementById("animalExtra").textContent = animal.ekstra;
+
+    document.getElementById(
+      "treatButton"
+    ).textContent = `GIV ${animal.navn} FREDAGSSLIK`;
+
+    if (animal.billeder && animal.billeder.length >= 2) {
+      document.getElementById("animalImage1").src = animal.billeder[0];
+      document.getElementById("animalImage2").src = animal.billeder[1];
+    }
+
+    const animalDetails = document.getElementById("animal-details");
+    animalDetails.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+
+  window.closeAnimalDetails = function () {
+    document.getElementById("animal-details").style.display = "none";
+    document.body.style.overflow = "auto";
+  };
+
+  window.givGodbid = function () {
+    alert("Tak fordi du gav en godbid! 🥕");
+  };
+
+  const closeAnimalDetailsBtn = document.querySelector(".animal-details-close");
+  if (closeAnimalDetailsBtn) {
+    closeAnimalDetailsBtn.addEventListener("click", window.closeAnimalDetails);
+  }
 });

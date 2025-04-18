@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <!-- Image carousel - Anja -->
+        <!-- Image Carousel -->
         <div class="image-carousel">
           <div class="carousel-container">
             <div class="carousel">
@@ -368,7 +368,7 @@
       </div>
     </section>
 
-    <!-- Donation modal - Jakob -->
+    <!-- Donation Modal - Jakob -->
     <div id="modalOverlay" class="modal-overlay">
       <div class="modal-container">
         <button id="closeModalBtn" class="close-modal-btn">&times;</button>
@@ -573,7 +573,7 @@
       </div>
     </div>
 
-    <!-- Confirmation Modal - Helena -->
+    <!-- Confirmation modal - Helena -->
     <div id="confirmationModal" class="confirmation-modal hidden">
       <div class="modal-content">
         <h2>Tak for din støtte!</h2>
@@ -630,6 +630,28 @@
         <button id="closeBtn">LUK</button>
       </div>
     </div>
+
+    <!-- Animal modal - Sandra -->
+    <div id="animal-details" class="animal-details-overlay">
+      <div class="animal-details-panel">
+        <span class="animal-details-close" onclick="closeAnimalDetails()"
+          >&times;</span
+        >
+        <h2 id="animalName"></h2>
+        <p id="animalInfo"></p>
+        <p id="animalDescription"></p>
+        <p id="animalExtra"></p>
+        <button onclick="givGodbid()" id="treatButton" class="treat-button">
+          GIV FREDAGSSLIK
+        </button>
+        <p class="animal-details-link">Lær mere om adoption &rarr;</p>
+        <div class="animal-images">
+          <img src="" id="animalImage1" alt="Dyr billede 1" />
+          <img src="" id="animalImage2" alt="Dyr billede 2" />
+        </div>
+      </div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
