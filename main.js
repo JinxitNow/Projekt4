@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Image Carousel
+  // Image Carousel -Anja
   let currentIndex = 0;
   const images = document.querySelectorAll(".carousel-image");
   const totalImages = images.length;
