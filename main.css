@@ -690,6 +690,7 @@ h1 {
   outline-color: var(--light-red);
   outline-width: 2px;
 }
+@import url("https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css");
 
 .radio-btn {
   width: 25px;
@@ -708,19 +709,13 @@ h1 {
 }
 
 .radio-icon {
-  width: 13px;
-  height: 13px;
-  position: relative;
-  background: var(--light-red);
-  border-radius: 50%;
   display: none;
 }
 
 .check-icon {
-  width: 11.88px;
-  height: 9.1px;
-  position: relative;
-  background: var(--light-red);
+  color: var(--light-red);
+  font-size: 16px;
+  display: none;
 }
 
 .checkbox {
@@ -740,32 +735,6 @@ h1 {
 
 .checkbox-icon {
   display: none;
-  position: relative;
-  width: 16px;
-  height: 16px;
-}
-
-.checkbox-icon::before,
-.checkbox-icon::after {
-  content: "";
-  position: absolute;
-  background-color: var(--light-red);
-}
-
-.checkbox-icon::before {
-  width: 3px;
-  height: 10px;
-  top: 0;
-  right: 3px;
-  transform: rotate(45deg);
-}
-
-.checkbox-icon::after {
-  width: 3px;
-  height: 6px;
-  bottom: 3px;
-  left: 4px;
-  transform: rotate(-45deg);
 }
 
 .option-label {
@@ -778,21 +747,13 @@ h1 {
   line-height: 21px;
 }
 
-.selected .radio-icon,
-.selected .checkbox-icon {
-  display: block;
+.selected .check-icon {
+  display: flex;
 }
 
-.radio-btn:not(.selected) .radio-icon,
-.checkbox:not(.selected) .checkbox-icon,
 .radio-btn:not(.selected) .check-icon,
 .checkbox:not(.selected) .check-icon {
   display: none;
-}
-
-.radio-btn.selected .radio-icon,
-.checkbox.selected .checkbox-icon {
-  display: block;
 }
 
 .radio-btn:hover,
