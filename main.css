@@ -709,12 +709,10 @@ h1 {
   cursor: pointer;
 }
 
-/* Remove the original radio indicator styling */
 .radio-icon {
   display: none;
 }
 
-/* Style the new check icon for radio buttons */
 .check-icon {
   color: var(--light-red);
   font-size: 16px;
@@ -736,7 +734,6 @@ h1 {
   cursor: pointer;
 }
 
-/* Remove the original checkbox styling */
 .checkbox-icon {
   display: none;
 }
@@ -751,7 +748,6 @@ h1 {
   line-height: 21px;
 }
 
-/* Display the check icon when selected */
 .selected .check-icon {
   display: flex;
 }

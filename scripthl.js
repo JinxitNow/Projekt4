@@ -15,10 +15,10 @@ $(document).ready(function () {
 
     const donation = {
       type: "Månedlig støtte",
-      amount: 25,
-      person: "Fornavn + Efternavn",
-      phone: "Nummer",
-      email: "Email",
+      amount: 25, 
+      person: firstname + lastname,
+      phone: phone,
+      email: email,
       paid: "Mobilepay"
     };
 
