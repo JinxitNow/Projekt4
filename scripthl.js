@@ -2,8 +2,8 @@ $(document).ready(function () {
   let interval = null;
   console.log("DOM er klar.");
 
-  $('.submit-btn').on('click', function (event) {
-    event.preventDefault();
+  $('.submit-btn').on('click', function () {
+    console.log("Submit-knap blev klikket.");
   
 
     const messages = [
