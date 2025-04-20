@@ -542,8 +542,12 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   window.givGodbid = function () {
-    alert("Tak fordi du gav en godbid! 🥕");
-  };
+    document.getElementById("animal-details").style.display = "none";
+    document.body.style.overflow = "hidden";
+
+    const modalOverlay = document.getElementById('modalOverlay');
+    modalOverlay.style.display = "flex";
+};
 
   const closeAnimalDetailsBtn = document.querySelector(".animal-details-close");
   if (closeAnimalDetailsBtn) {
