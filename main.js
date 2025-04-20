@@ -33,6 +33,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.toggleMenu = toggleMenu;
 
+  // Hero
+  const copyHashtagBtn = document.getElementById('copyHashtagBtn');
+  if (copyHashtagBtn) {
+      copyHashtagBtn.addEventListener('click', function() {
+          const hashtag = "#DyrenesFredagsslik";
+          navigator.clipboard.writeText(hashtag).then(() => {
+              const originalText = this.textContent;
+              this.textContent = 'Kopieret!';
+              setTimeout(() => {
+                  this.textContent = originalText;
+              }, 2000);
+          }).catch(err => {
+              console.error('Failed to copy text: ', err);
+          });
+      });
+  }
+
+
+
   // Donation Modal - Jakob
   const openModalBtns = document.querySelectorAll(".openModalBtn");
   const closeModalBtn = document.getElementById("closeModalBtn");
