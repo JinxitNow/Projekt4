@@ -307,11 +307,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateCarousel() {
     
     const offset = -currentIndex * (100 / imagesPerPage);
-    document.querySelector(".carousel").style.transition =
-      "transform 0.5s ease";
-    document.querySelector(
-      ".carousel"
-    ).style.transform = `translateX(${offset}%)`;
+    document.querySelector(".carousel").style.transition = "transform 0.5s ease";
+    document.querySelector(".carousel").style.transform = `translateX(${offset}%)`;
   }
 
   function nextImage() {
