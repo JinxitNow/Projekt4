@@ -404,13 +404,13 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       navn: "ROMEO",
-      alder: "4 år",
+      alder: "1 år",
       køn: "Han",
-      art: "Hund",
+      art: "Undulat",
       beskrivelse:
-        "Romeo er en glad og energisk hund, der elsker lange gåture og at lege med bolde.",
+        "Romeo er en farverig og livlig undulat, der kan fløjte små melodier.",
       ekstra:
-        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives i et aktivt hjem med adgang til have.",
+        "✨ Sundhedstjekket.\n🏡 Trives bedst med daglig interaktion og stimulering.",
       billeder: [
         "https://placehold.co/368x400",
         "https://placehold.co/368x400",
@@ -420,10 +420,10 @@ document.addEventListener("DOMContentLoaded", function () {
       navn: "SWEETIE",
       alder: "2 år",
       køn: "Hun",
-      art: "Marsvin",
+      art: "Dværgkanin Blanding",
       beskrivelse:
-        "Sweetie er et socialt marsvin, der elsker at få grøntsager og blive kløet bag ørerne.",
-      ekstra: "✨ Sundhedstjekket.\n🏡 Trives bedst sammen med andre marsvin.",
+        "Sweetie er en social kanin, der elsker at få grøntsager og blive kløet bag ørerne.",
+      ekstra: "✨ Sundhedstjekket.\n🏡 Trives bedst sammen med andre kaniner.",
       billeder: [
         "https://placehold.co/368x400",
         "https://placehold.co/368x400",
@@ -431,11 +431,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       navn: "COOKIE",
-      alder: "1 år",
+      alder: "4 år",
       køn: "Han",
-      art: "Undulat",
+      art: "Kat",
       beskrivelse:
-        "Cookie er en farverig og livlig undulat, der kan fløjte små melodier.",
+        "Cookie er en aktiv og legesyg kat, der elsker at klatre og udforske nye steder.",
       ekstra:
         "✨ Sundhedstjekket.\n🏡 Trives bedst med daglig interaktion og stimulering.",
       billeder: [
@@ -447,11 +447,11 @@ document.addEventListener("DOMContentLoaded", function () {
       navn: "BELLATRIX",
       alder: "3 år",
       køn: "Hun",
-      art: "Kat",
+      art: "Dværgkanin Blanding",
       beskrivelse:
-        "Bellatrix er en majestætisk sort kat med en stærk personlighed og et blødt hjerte.",
+        "Bellatrix er en social kanin, der elsker at få grøntsager og blive kløet bag ørerne.",
       ekstra:
-        "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives bedst som eneste kat i hjemmet.",
+        "✨ Sundhedstjekket.\n🏡 Trives bedst sammen med andre kaniner.",
       billeder: [
         "https://placehold.co/368x400",
         "https://placehold.co/368x400",
@@ -461,9 +461,9 @@ document.addEventListener("DOMContentLoaded", function () {
       navn: "KIM",
       alder: "5 år",
       køn: "Han",
-      art: "Hund",
+      art: "Kat",
       beskrivelse:
-        "Kim er en rolig og loyal hund, der elsker at ligge ved dine fødder og bare være sammen med dig.",
+        "Kim er en rolig og loyal kat, der elsker at ligge ved dine fødder og bare være sammen med dig.",
       ekstra:
         "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives i et roligt hjem med rutiner.",
       billeder: [
