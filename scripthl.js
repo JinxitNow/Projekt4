@@ -35,10 +35,6 @@ $(document).ready(function () {
 
     $('#confirmationModal').removeClass('hidden');
     console.log("Bekræftelsesmodal vist.");
-    console.log("Bekræftelsesmodal vist.");
-console.log("Bekræftelses-email:", $('#confirmemail').text());
-console.log("Bekræftelses-telefon:", $('#confirmphone').text());
-
 
     if (interval !== null) {
       clearInterval(interval);
