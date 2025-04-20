@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
   const images = document.querySelectorAll(".carousel-image");
   const totalImages = images.length;
-  const imagesPerPage = 4;
+  const imagesPerPage = 2;
 
   for (let i = 0; i < totalImages; i++) {
     console.log(images[i]);

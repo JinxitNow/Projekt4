@@ -297,6 +297,7 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .carousel-container {
@@ -308,12 +309,13 @@ h1 {
 .carousel {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 5px;
+  gap: 2px;
 }
 
 .carousel-image {
   width: 25%;
   object-fit: cover;
+  
 }
 
 .carousel-controls {
