@@ -2,8 +2,9 @@ $(document).ready(function () {
   let interval = null;
   console.log("DOM er klar.");
 
-  $('.submit-btn').on('click', function () {
-    console.log("Submit-knap blev klikket.");
+  $('.submit-btn').on('click', function (event) {
+    event.preventDefault();
+  
 
     const messages = [
       "Tusind tak for din støtte!",
@@ -14,25 +15,30 @@ $(document).ready(function () {
     ];
 
     const donation = {
-      type: "Månedlig støtte",
-      amount: 25, 
-      person: firstname + lastname,
-      phone: phone,
-      email: email,
-      paid: "Mobilepay"
+      type: $('.payment-option .radio-btn.selected').parent().find('.option-label').text(),
+      amount: $('.amount-option .radio-btn.selected').parent().find('.option-label').text() || $('#customAmount').val() + " DKK",
+      person: $('#firstname').val() + " " + $('#lastname').val(),
+      phone: $('#confirmphone').val(),
+      email: $('#confirmemail').val(),
+      paid: $('.payment-method-option .radio-btn.selected').parent().find('.option-label').text()
     };
+    
 
     console.log("Donationsdata:", donation);
 
     $('#type').text(donation.type);
-    $('#amount').text(donation.amount + " DKK");
+    $('#amount').text(donation.amount);
     $('#person').text(donation.person);
-    $('#phone').text(donation.phone);
-    $('#email').text(donation.email);
+    $('#confirmphone').text(donation.phone); 
+    $('#confirmemail').text(donation.email);
     $('#paid').text(donation.paid);
 
     $('#confirmationModal').removeClass('hidden');
     console.log("Bekræftelsesmodal vist.");
+    console.log("Bekræftelsesmodal vist.");
+console.log("Bekræftelses-email:", $('#confirmemail').text());
+console.log("Bekræftelses-telefon:", $('#confirmphone').text());
+
 
     if (interval !== null) {
       clearInterval(interval);
