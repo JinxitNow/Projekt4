@@ -1,7 +1,7 @@
 let currentIndex = 0;
 const images = document.querySelectorAll('.carousel-image');
 const totalImages = images.length;
-const imagesPerPage = 4;
+const imagesPerPage = 2;
 
 //Lave for-loop, som consol-logger alle billeder ud.
 for (let i = 0; i < totalImages; i++) {
@@ -11,7 +11,7 @@ for (let i = 0; i < totalImages; i++) {
 
 // Funktion til at opdatere karousellen og vise de korrekte billeder
 function updateCarousel() {
-    const offset = -currentIndex * (100 / imagesPerPage);
+    const offset = -(currentIndex * 100 / imagesPerPage);
     document.querySelector('.carousel').style.transition = "transform 0.5s ease";
     document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
 }

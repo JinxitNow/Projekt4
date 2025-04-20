@@ -298,6 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".carousel-image");
   const totalImages = images.length;
   const imagesPerPage = 4;
+  const slideStep = 4;
 
   for (let i = 0; i < totalImages; i++) {
     console.log(images[i]);
@@ -306,27 +307,27 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateCarousel() {
     
     const offset = -currentIndex * (100 / imagesPerPage);
-    document.querySelector(".carousel").style.transition =
-      "transform 0.5s ease";
-    document.querySelector(
-      ".carousel"
-    ).style.transform = `translateX(${offset}%)`;
+    document.querySelector(".carousel").style.transition = "transform 0.9s ease";
+    document.querySelector(".carousel").style.transform = `translateX(${offset}%)`;
   }
 
   function nextImage() {
-    if (currentIndex < Math.ceil(totalImages / imagesPerPage) - 1) {
-      currentIndex++;
-    } else {
+    if (currentIndex + imagesPerPage >= totalImages) {
       currentIndex = 0;
+    } else if (currentIndex + slideStep + imagesPerPage > totalImages) {
+      
+      currentIndex = totalImages - imagesPerPage;
+    } else {
+      currentIndex += slideStep;
     }
     updateCarousel();
   }
-
+  
   function previousImage() {
-    if (currentIndex > 0) {
-      currentIndex--;
+    if (currentIndex - slideStep < 0) {
+      currentIndex = 0;
     } else {
-      currentIndex = Math.floor(totalImages / imagesPerPage) - 1;
+      currentIndex -= slideStep;
     }
     updateCarousel();
   }
