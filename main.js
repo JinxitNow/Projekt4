@@ -50,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-
-
   // Donation Modal - Jakob
   const openModalBtns = document.querySelectorAll(".openModalBtn");
   const closeModalBtn = document.getElementById("closeModalBtn");
@@ -138,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+
   const submitButton = document.querySelector(".submit-btn");
   submitButton.addEventListener("click", function (e) {
     e.preventDefault();
@@ -165,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
       highlightInvalidField(emailField);
     }
-
+     // Helena starter her
     if (isValid) {
       const fullName = `${document.getElementById("firstname").value} ${
         document.getElementById("lastname").value
@@ -190,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("email").textContent =
         document.getElementById("email").value;
       document.getElementById("paid").textContent = paymentMethod;
-
+     
       const messages = [
         "Tusind tak for din støtte!",
         "Ses vi næste fredag?",
@@ -208,9 +207,9 @@ document.addEventListener("DOMContentLoaded", function () {
         i++;
         if (i >= messages.length) i = 0;
       }, 5000);
-
+      
       document.getElementById("confirmationModal").classList.remove("hidden");
-      closeModal();
+      closeModal(); 
 
       document
         .getElementById("closeBtn")
@@ -228,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
-
+// Helena slutter her og Jakob Starter igen
   function highlightInvalidField(field) {
     const inputFieldContainer = field.closest(".input-field");
     inputFieldContainer.classList.add("invalid");

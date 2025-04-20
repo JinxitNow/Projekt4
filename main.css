@@ -1276,7 +1276,7 @@ h1 {
   color: var(--biege);
   border: none;
   padding: 11px 24px;
-  border-radius: 6px;
+  border-radius: 0px;
   cursor: pointer;
 }
 
@@ -1285,6 +1285,45 @@ h1 {
   color: var(--light-red);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .info-row span:last-child {
+    text-align: left;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .info-row span:last-child {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iconshl {
+    gap: 0.8rem;
+  }
+  
+  .info-box {
+    padding: 1rem;
+  }
+}
+
 
 /* Animal modal - Sandr */
 .animal-details-overlay {
