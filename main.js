@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav = document.getElementById("myTopnav");
     nav.classList.toggle("responsive");
 
+    const menuInfo = {
+      antalPunkter: 5,
+      lavetAf: "Justine",
+      aktiv: true,
+      beskrivelse: "Menu til navigation på siden"
+    };
+
     const menuItems = [
       "DYR I NØD",
       "ADOPTION",
