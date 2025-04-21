@@ -377,8 +377,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ekstra:
         "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives bedst i et roligt hjem uden små børn.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Matilde2.png",
+        "Images/billeder-lær-om-dyr/Matilde3.png",
       ],
     },
     {
@@ -391,22 +391,22 @@ document.addEventListener("DOMContentLoaded", function () {
       ekstra:
         "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives i et hjem med masser af aktivitet.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Mia2.png",
+        "Images/billeder-lær-om-dyr/Mia3.png",
       ],
     },
     {
       navn: "NETE",
       alder: "1 år",
       køn: "Hun",
-      art: "Kat",
+      art: "Hund",
       beskrivelse:
-        "Nete er en sky men kærlig kat, der har brug for tid til at vænne sig til nye mennesker.",
+        "Nete er en sky men kærlig Hund, der har brug for tid til at vænne sig til nye mennesker.",
       ekstra:
         "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives bedst i et roligt hjem med tålmodige ejere.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Nete2.png",
+        "Images/billeder-lær-om-dyr/Nete3.png",
       ],
     },
     {
@@ -419,8 +419,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ekstra:
         "✨ Sundhedstjekket.\n🏡 Trives bedst med daglig interaktion og stimulering.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Romeo2.png",
+        "Images/billeder-lær-om-dyr/Romeo3.png",
       ],
     },
     {
@@ -432,22 +432,22 @@ document.addEventListener("DOMContentLoaded", function () {
         "Sweetie er en social kanin, der elsker at få grøntsager og blive kløet bag ørerne.",
       ekstra: "✨ Sundhedstjekket.\n🏡 Trives bedst sammen med andre kaniner.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Sweetie2.png",
+        "Images/billeder-lær-om-dyr/Sweetie3.png",
       ],
     },
     {
       navn: "COOKIE",
       alder: "4 år",
       køn: "Han",
-      art: "Kat",
+      art: "Hund",
       beskrivelse:
-        "Cookie er en aktiv og legesyg kat, der elsker at klatre og udforske nye steder.",
+        "Cookie er en aktiv og legesyg Hund, der elsker at lege og udforske nye steder.",
       ekstra:
         "✨ Sundhedstjekket.\n🏡 Trives bedst med daglig interaktion og stimulering.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Cookie2.png",
+        "Images/billeder-lær-om-dyr/Cookie3.png",
       ],
     },
     {
@@ -460,22 +460,22 @@ document.addEventListener("DOMContentLoaded", function () {
       ekstra:
         "✨ Sundhedstjekket.\n🏡 Trives bedst sammen med andre kaniner.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Bellatrix2.png",
+        "Images/billeder-lær-om-dyr/Bellatrix3.png",
       ],
     },
     {
       navn: "KIM",
       alder: "5 år",
       køn: "Han",
-      art: "Kat",
+      art: "Hund",
       beskrivelse:
-        "Kim er en rolig og loyal kat, der elsker at ligge ved dine fødder og bare være sammen med dig.",
+        "Kim er en rolig og loyal Hund, der elsker at ligge ved dine fødder og bare være sammen med dig.",
       ekstra:
         "✨ Neutraliseret, vaccineret og chippet.\n🏡 Trives i et roligt hjem med rutiner.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Kim2.png",
+        "Images/billeder-lær-om-dyr/Kim3.png",
       ],
     },
     {
@@ -488,8 +488,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ekstra:
         "✨ Neutraliseret, vaccineret og sundhedstjekket.\n🏡 Trives bedst med god plads til at bevæge sig.",
       billeder: [
-        "https://placehold.co/368x400",
-        "https://placehold.co/368x400",
+        "Images/billeder-lær-om-dyr/Rollo2.png",
+        "Images/billeder-lær-om-dyr/Rolle3.png",
       ],
     },
   ];
